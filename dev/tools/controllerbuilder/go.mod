@@ -10,7 +10,7 @@ require (
 	github.com/gdamore/tcell/v2 v2.7.1
 	github.com/go-git/go-git/v5 v5.13.2
 	github.com/google/go-cmp v0.7.0
-	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57
+	github.com/rivo/tview v0.0.0-20250501113434-0c592cd31026
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/pflag v1.0.5
 	golang.org/x/tools v0.31.0
