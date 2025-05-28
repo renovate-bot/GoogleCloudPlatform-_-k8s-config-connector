@@ -7,15 +7,15 @@ toolchain go1.24.2
 replace github.com/GoogleCloudPlatform/k8s-config-connector/mockgcp => ./mockgcp
 
 require (
-	cloud.google.com/go/aiplatform v1.86.0
+	cloud.google.com/go/aiplatform v1.87.0
 	cloud.google.com/go/alloydb v1.14.0
 	cloud.google.com/go/apigateway v1.7.6
 	cloud.google.com/go/apikeys v1.1.12
 	cloud.google.com/go/apphub v0.2.4
-	cloud.google.com/go/asset v1.21.0
+	cloud.google.com/go/asset v1.21.1
 	cloud.google.com/go/backupdr v1.3.1
 	cloud.google.com/go/batch v1.12.2
-	cloud.google.com/go/bigquery v1.67.0
+	cloud.google.com/go/bigquery v1.68.0
 	cloud.google.com/go/certificatemanager v1.9.5
 	cloud.google.com/go/cloudbuild v1.22.2
 	cloud.google.com/go/clouddms v1.8.7
@@ -25,10 +25,10 @@ require (
 	cloud.google.com/go/datacatalog v1.26.0
 	cloud.google.com/go/dataflow v0.11.0
 	cloud.google.com/go/dataform v0.11.2
-	cloud.google.com/go/dataplex v1.25.2
+	cloud.google.com/go/dataplex v1.25.3
 	cloud.google.com/go/dataproc/v2 v2.11.2
 	cloud.google.com/go/datastream v1.14.1
-	cloud.google.com/go/deploy v1.27.1
+	cloud.google.com/go/deploy v1.27.2
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/documentai v1.37.0
 	cloud.google.com/go/edgecontainer v1.4.3
@@ -60,7 +60,7 @@ require (
 	cloud.google.com/go/secretmanager v1.14.7
 	cloud.google.com/go/securesourcemanager v1.1.1
 	cloud.google.com/go/security v1.18.5
-	cloud.google.com/go/spanner v1.81.0
+	cloud.google.com/go/spanner v1.81.1
 	cloud.google.com/go/speech v1.27.1
 	cloud.google.com/go/storage v1.54.0
 	cloud.google.com/go/vmwareengine v1.3.5
@@ -105,10 +105,10 @@ require (
 	golang.org/x/sync v0.14.0
 	golang.org/x/time v0.11.0
 	google.golang.org/api v0.232.0
-	google.golang.org/genproto v0.0.0-20250512202823-5a2f75b736a9
-	google.golang.org/genproto/googleapis/api v0.0.0-20250512202823-5a2f75b736a9
-	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250505200425-f936aa4a68b2
+	google.golang.org/genproto v0.0.0-20250519155744-55703ea1f237
+	google.golang.org/genproto/googleapis/api v0.0.0-20250519155744-55703ea1f237
+	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250528174236-200df99c418a
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250512202823-5a2f75b736a9
 	google.golang.org/grpc v1.72.0
 	google.golang.org/protobuf v1.36.6
 	gopkg.in/dnaeon/go-vcr.v3 v3.2.0
