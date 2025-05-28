@@ -5,7 +5,7 @@ go 1.24
 toolchain go1.24.2
 
 require (
-	cloud.google.com/go/accesscontextmanager v1.9.3
+	cloud.google.com/go/accesscontextmanager v1.9.6
 	cloud.google.com/go/apigateway v1.7.3
 	cloud.google.com/go/bigtable v1.37.0
 	cloud.google.com/go/compute v1.34.0
