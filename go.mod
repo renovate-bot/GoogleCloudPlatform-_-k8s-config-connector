@@ -47,7 +47,7 @@ require (
 	cloud.google.com/go/netapp v1.7.1
 	cloud.google.com/go/networkmanagement v1.19.1
 	cloud.google.com/go/networksecurity v0.10.6
-	cloud.google.com/go/networkservices v0.2.4
+	cloud.google.com/go/networkservices v0.2.5
 	cloud.google.com/go/notebooks v1.12.6
 	cloud.google.com/go/orchestration v1.11.9
 	cloud.google.com/go/orgpolicy v1.15.0
