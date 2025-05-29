@@ -25,7 +25,7 @@ require (
 	k8s.io/utils v0.0.0-20240502163921-fe8a2dddb1d0
 	sigs.k8s.io/cli-utils v0.35.0
 	sigs.k8s.io/controller-runtime v0.17.2
-	sigs.k8s.io/kubebuilder-declarative-pattern v0.15.0-beta.1.0.20240614185435-a248ed1e894c
+	sigs.k8s.io/kubebuilder-declarative-pattern v0.15.0-beta.2
 	sigs.k8s.io/kubebuilder-declarative-pattern/applylib v0.0.0-20240830014331-1a63d5a3bb9d
 	sigs.k8s.io/kustomize/kstatus v0.0.2-0.20200509233124-065f70705d4d
 	tailscale.com v1.62.0
