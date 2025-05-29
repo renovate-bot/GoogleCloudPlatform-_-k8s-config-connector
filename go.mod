@@ -65,7 +65,7 @@ require (
 	cloud.google.com/go/storage v1.54.0
 	cloud.google.com/go/vmwareengine v1.3.5
 	cloud.google.com/go/workflows v1.14.2
-	cloud.google.com/go/workstations v1.1.1
+	cloud.google.com/go/workstations v1.1.5
 	contrib.go.opencensus.io/exporter/prometheus v0.1.0
 	github.com/GoogleCloudPlatform/declarative-resource-client-library v1.62.0
 	github.com/GoogleCloudPlatform/k8s-config-connector/dev/tools/controllerbuilder v0.0.0-20250208024142-7cd1b21e1d1e
