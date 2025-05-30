@@ -16,7 +16,7 @@ require (
 	cloud.google.com/go/longrunning v0.6.6
 	cloud.google.com/go/orgpolicy v1.14.2
 	cloud.google.com/go/osconfig v1.14.3
-	cloud.google.com/go/recaptchaenterprise/v2 v2.19.4
+	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
