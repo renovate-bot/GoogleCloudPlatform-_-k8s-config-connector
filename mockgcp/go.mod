@@ -14,7 +14,7 @@ require (
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/iam v1.5.0
 	cloud.google.com/go/longrunning v0.6.6
-	cloud.google.com/go/orgpolicy v1.14.2
+	cloud.google.com/go/orgpolicy v1.15.0
 	cloud.google.com/go/osconfig v1.14.3
 	cloud.google.com/go/recaptchaenterprise/v2 v2.19.4
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
