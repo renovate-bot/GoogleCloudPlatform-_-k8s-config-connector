@@ -63,6 +63,8 @@ cloud.google.com/go/deploy v1.27.1 h1:Rs8v4J68cZ45RfimX0wjraXaF4WZl1SIR+hkmGaK6A
 cloud.google.com/go/deploy v1.27.1/go.mod h1:il2gxiMgV3AMlySoQYe54/xpgVDoEh185nj4XjJ+GRk=
 cloud.google.com/go/discoveryengine v1.15.0 h1:CHUN1mbs5iTqWJRuU6rZCvcuV5iVMr/rW8Kr1ivn7p4=
 cloud.google.com/go/discoveryengine v1.15.0/go.mod h1:WIstQLougDQ6D8cza4icHFfGGzXsI4QNwTEWdNfRJ8g=
+cloud.google.com/go/discoveryengine v1.17.2 h1:FIiXghd2XUAzKpHP2iTTcNiq/wGXTKxnCc3Dpf70nwI=
+cloud.google.com/go/discoveryengine v1.17.2/go.mod h1:fluEkJztnS32JSsXgM3+1VrBf2/ph7R+AJWGgxb5rUE=
 cloud.google.com/go/documentai v1.37.0 h1:7fla8GcarupO15eatRTUveXCob6DOSW1Wa+1i63CM3Q=
 cloud.google.com/go/documentai v1.37.0/go.mod h1:qAf3ewuIUJgvSHQmmUWvM3Ogsr5A16U2WPHmiJldvLA=
 cloud.google.com/go/edgecontainer v1.4.3 h1:9tfGCicvrki927T+hGMB0yYmwIbRuZY6JR1/awrKiZ0=
