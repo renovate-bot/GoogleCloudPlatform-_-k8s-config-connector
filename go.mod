@@ -44,7 +44,7 @@ require (
 	cloud.google.com/go/managedkafka v0.4.0
 	cloud.google.com/go/metastore v1.14.7
 	cloud.google.com/go/monitoring v1.24.2
-	cloud.google.com/go/netapp v1.7.1
+	cloud.google.com/go/netapp v1.9.0
 	cloud.google.com/go/networkmanagement v1.19.1
 	cloud.google.com/go/networksecurity v0.10.6
 	cloud.google.com/go/networkservices v0.2.4
