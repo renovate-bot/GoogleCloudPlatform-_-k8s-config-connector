@@ -19,6 +19,8 @@ cloud.google.com/go/apikeys v1.1.12 h1:ZTFWJ1ibGjiIrIhhtdWOm7AGJd+y9R17dVujlgU//
 cloud.google.com/go/apikeys v1.1.12/go.mod h1:3tqZUj8CmCJm0maQyLufgyO5Ghf3AZQ6hcSkIqsSIm4=
 cloud.google.com/go/apphub v0.2.4 h1:lhsd/6+16NUshw8c52T+DfMaAz04SX6ItMr8caGbtgY=
 cloud.google.com/go/apphub v0.2.4/go.mod h1:QJw0OWQIQv/NvBz2/RJGAD6iJTLamf3vqOEsvFMixHw=
+cloud.google.com/go/apphub v0.3.1 h1:Wm3yzI59YBwrwInlBpkmnN2mXUN2JmQFiNNIUiKAR0g=
+cloud.google.com/go/apphub v0.3.1/go.mod h1:MU8A2HIKjWYjD0aWk1nkijIS2B8CK4DCdMc2gq6GMug=
 cloud.google.com/go/asset v1.21.0 h1:AtsFIJU1gH3jXHf+2cyugTkpOPT8VYyjCK2yNmQltvg=
 cloud.google.com/go/asset v1.21.0/go.mod h1:0lMJ0STdyImZDSCB8B3i/+lzIquLBpJ9KZ4pyRvzccM=
 cloud.google.com/go/auth v0.16.1 h1:XrXauHMd30LhQYVRHLGvJiYeczweKQXZxsTbV9TiguU=
