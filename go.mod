@@ -58,7 +58,7 @@ require (
 	cloud.google.com/go/redis v1.18.2
 	cloud.google.com/go/resourcemanager v1.10.6
 	cloud.google.com/go/secretmanager v1.14.7
-	cloud.google.com/go/securesourcemanager v1.1.1
+	cloud.google.com/go/securesourcemanager v1.3.3
 	cloud.google.com/go/security v1.18.5
 	cloud.google.com/go/spanner v1.81.0
 	cloud.google.com/go/speech v1.27.1
