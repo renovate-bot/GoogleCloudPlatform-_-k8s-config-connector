@@ -6,7 +6,7 @@ toolchain go1.24.2
 
 require (
 	github.com/google/go-cmp v0.7.0
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.9.1
 	k8s.io/apimachinery v0.32.1
 	k8s.io/client-go v0.32.1
 	k8s.io/klog/v2 v2.130.1
@@ -39,7 +39,7 @@ require (
 	github.com/prometheus/client_golang v1.20.4 // indirect
 	github.com/prometheus/common v0.59.1 // indirect
 	github.com/rogpeppe/go-internal v1.13.1 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	golang.org/x/net v0.39.0 // indirect
