@@ -21,7 +21,7 @@ require (
 	github.com/hashicorp/terraform-plugin-mux v0.8.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.0
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/mitchellh/hashstructure v1.1.0
+	github.com/mitchellh/hashstructure/v2 v2.0.2
 	github.com/sirupsen/logrus v1.8.1
 	golang.org/x/net v0.14.0
 	golang.org/x/oauth2 v0.11.0
