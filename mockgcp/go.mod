@@ -17,7 +17,7 @@ require (
 	cloud.google.com/go/orgpolicy v1.14.2
 	cloud.google.com/go/osconfig v1.14.3
 	cloud.google.com/go/recaptchaenterprise/v2 v2.19.4
-	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
+	github.com/GoogleCloudPlatform/k8s-config-connector v1.132.0
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
