@@ -22,7 +22,7 @@ require (
 	k8s.io/apimachinery v0.29.1
 	k8s.io/client-go v0.29.1
 	k8s.io/klog/v2 v2.120.1
-	k8s.io/utils v0.0.0-20240502163921-fe8a2dddb1d0
+	k8s.io/utils 4c0f3b243397
 	sigs.k8s.io/cli-utils v0.35.0
 	sigs.k8s.io/controller-runtime v0.17.2
 	sigs.k8s.io/kubebuilder-declarative-pattern v0.15.0-beta.1.0.20240614185435-a248ed1e894c
