@@ -27,6 +27,8 @@ cloud.google.com/go/auth/oauth2adapt v0.2.8 h1:keo8NaayQZ6wimpNSmW5OPc283g65QNIi
 cloud.google.com/go/auth/oauth2adapt v0.2.8/go.mod h1:XQ9y31RkqZCcwJWNSx2Xvric3RrU88hAYYbjDWYDL+c=
 cloud.google.com/go/backupdr v1.3.1 h1:AwJ0pja16mNvZcq8crxGSDCtvkWtdppNGAEADuzS5ys=
 cloud.google.com/go/backupdr v1.3.1/go.mod h1:CKwXJPs/L9hwXvZ045exrv1x1rJUA4wJe5Q2ux8mEuQ=
+cloud.google.com/go/backupdr v1.3.2 h1:LY3idLxoW9bm73UMlVafS4Tiw4aWlEMz28HChw3xhUE=
+cloud.google.com/go/backupdr v1.3.2/go.mod h1:5/tt4yZh7CN/a45AYsc+JtUtTLg1vqUf2o1l3RYuY60=
 cloud.google.com/go/batch v1.12.2 h1:gWQdvdPplptpvrkqF6ibtxZkOsYKLTFbxYawHa/TvCg=
 cloud.google.com/go/batch v1.12.2/go.mod h1:tbnuTN/Iw59/n1yjAYKV2aZUjvMM2VJqAgvUgft6UEU=
 cloud.google.com/go/bigquery v1.67.0 h1:GXleMyn/cu5+DPLy9Rz5f5IULWTLrepwbQnP/5qrVbY=
