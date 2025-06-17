@@ -106,7 +106,7 @@ require (
 	go.uber.org/zap v1.27.0
 	golang.org/x/oauth2 v0.30.0
 	golang.org/x/sync v0.14.0
-	golang.org/x/time v0.11.0
+	golang.org/x/time v0.12.0
 	google.golang.org/api v0.235.0
 	google.golang.org/genproto v0.0.0-20250512202823-5a2f75b736a9
 	google.golang.org/genproto/googleapis/api v0.0.0-20250512202823-5a2f75b736a9
