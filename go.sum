@@ -53,6 +53,8 @@ cloud.google.com/go/dataflow v0.11.0 h1:AdhB4cAkMOC9NtrHJxpKOVvO/VqBLaIyk0tEEhbG
 cloud.google.com/go/dataflow v0.11.0/go.mod h1:gNHC9fUjlV9miu0hd4oQaXibIuVYTQvZhMdPievKsPk=
 cloud.google.com/go/dataform v0.11.2 h1:poGCMWMvu/t2SooaWDHJAJiUyAtWYzKy+SGDNez2RI0=
 cloud.google.com/go/dataform v0.11.2/go.mod h1:IMmueJPEKpptT2ZLWlvIYjw6P/mYHHxA7/SUBiXqZUY=
+cloud.google.com/go/dataform v0.12.0 h1:0eCPTPUC/RZ863aVfXTJLkg0tEpdpn62VD6ywSmmzxM=
+cloud.google.com/go/dataform v0.12.0/go.mod h1:PuDIEY0lSVuPrZqcFji1fmr5RRvz3DGz4YP/cONc8g4=
 cloud.google.com/go/dataplex v1.25.2 h1:jgfG6iqPVJxNPSpVCxH4diHMFb87wNd0F1kDgU3XJCk=
 cloud.google.com/go/dataplex v1.25.2/go.mod h1:AH2/a7eCYvFP58scJGR7YlSY9qEhM8jq5IeOA/32IZ0=
 cloud.google.com/go/dataproc/v2 v2.11.2 h1:KhC8wdLILpAs17yeTG6Miwg1v0nOP/OXD+9QNg3w6AQ=
