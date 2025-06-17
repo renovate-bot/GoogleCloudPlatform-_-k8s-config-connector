@@ -30,7 +30,7 @@ require (
 	cloud.google.com/go/dataproc/v2 v2.11.2
 	cloud.google.com/go/datastream v1.14.1
 	cloud.google.com/go/deploy v1.27.1
-	cloud.google.com/go/discoveryengine v1.15.0
+	cloud.google.com/go/discoveryengine v1.18.0
 	cloud.google.com/go/documentai v1.37.0
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/essentialcontacts v1.7.6
@@ -109,10 +109,10 @@ require (
 	golang.org/x/time v0.11.0
 	google.golang.org/api v0.235.0
 	google.golang.org/genproto v0.0.0-20250512202823-5a2f75b736a9
-	google.golang.org/genproto/googleapis/api v0.0.0-20250512202823-5a2f75b736a9
+	google.golang.org/genproto/googleapis/api v0.0.0-20250528174236-200df99c418a
 	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250512202823-5a2f75b736a9
-	google.golang.org/grpc v1.72.1
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250528174236-200df99c418a
+	google.golang.org/grpc v1.72.2
 	google.golang.org/protobuf v1.36.6
 	gopkg.in/dnaeon/go-vcr.v3 v3.2.0
 	gopkg.in/yaml.v2 v2.4.0
