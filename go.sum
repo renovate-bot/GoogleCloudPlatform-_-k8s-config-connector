@@ -61,6 +61,8 @@ cloud.google.com/go/datastream v1.14.1 h1:j+y0lUKm9pbDjJn0YcWxPI/hXNGUQ80GE6yrFu
 cloud.google.com/go/datastream v1.14.1/go.mod h1:JqMKXq/e0OMkEgfYe0nP+lDye5G2IhIlmencWxmesMo=
 cloud.google.com/go/deploy v1.27.1 h1:Rs8v4J68cZ45RfimX0wjraXaF4WZl1SIR+hkmGaK6Ag=
 cloud.google.com/go/deploy v1.27.1/go.mod h1:il2gxiMgV3AMlySoQYe54/xpgVDoEh185nj4XjJ+GRk=
+cloud.google.com/go/deploy v1.27.2 h1:C0VqBhFyQFp6+xgPHZAD7LeRA4XGy5YLzGmPQ2NhlLk=
+cloud.google.com/go/deploy v1.27.2/go.mod h1:4NHWE7ENry2A4O1i/4iAPfXHnJCZ01xckAKpZQwhg1M=
 cloud.google.com/go/discoveryengine v1.15.0 h1:CHUN1mbs5iTqWJRuU6rZCvcuV5iVMr/rW8Kr1ivn7p4=
 cloud.google.com/go/discoveryengine v1.15.0/go.mod h1:WIstQLougDQ6D8cza4icHFfGGzXsI4QNwTEWdNfRJ8g=
 cloud.google.com/go/documentai v1.37.0 h1:7fla8GcarupO15eatRTUveXCob6DOSW1Wa+1i63CM3Q=

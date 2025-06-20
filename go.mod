@@ -29,7 +29,7 @@ require (
 	cloud.google.com/go/dataplex v1.25.2
 	cloud.google.com/go/dataproc/v2 v2.11.2
 	cloud.google.com/go/datastream v1.14.1
-	cloud.google.com/go/deploy v1.27.1
+	cloud.google.com/go/deploy v1.27.2
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/documentai v1.37.0
 	cloud.google.com/go/edgecontainer v1.4.3
