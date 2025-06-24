@@ -20,7 +20,7 @@ require (
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1
 	golang.org/x/oauth2 v0.29.0
 	google.golang.org/api v0.229.0
 	google.golang.org/genproto v0.0.0-20250303144028-a0af3efb3deb
