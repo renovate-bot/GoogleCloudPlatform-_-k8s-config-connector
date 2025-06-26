@@ -1,6 +1,8 @@
 module github.com/GoogleCloudPlatform/declarative-resource-client-library
 
-go 1.19
+go 1.23.0
+
+toolchain go1.24.4
 
 require (
 	bitbucket.org/creachadair/stringset v0.0.8
@@ -9,7 +11,7 @@ require (
 	github.com/google/go-cmp v0.5.8
 	github.com/google/go-cpy v0.0.0-20211218193943-a9c933c06932
 	github.com/kylelemons/godebug v1.1.0
-	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+	golang.org/x/oauth2 v0.30.0
 	google.golang.org/api v0.29.0
 )
 
