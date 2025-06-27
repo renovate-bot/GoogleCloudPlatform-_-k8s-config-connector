@@ -5,7 +5,7 @@ go 1.24.0
 replace github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclusterlease => ./
 
 require (
-	github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclusterlease v0.0.0-00010101000000-000000000000
+	github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclusterlease 5f057f19fd3e
 	github.com/go-logr/logr v0.1.0
 	github.com/onsi/ginkgo v1.11.0
 	github.com/onsi/gomega v1.8.1
