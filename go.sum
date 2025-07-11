@@ -55,6 +55,8 @@ cloud.google.com/go/dataform v0.11.2 h1:poGCMWMvu/t2SooaWDHJAJiUyAtWYzKy+SGDNez2
 cloud.google.com/go/dataform v0.11.2/go.mod h1:IMmueJPEKpptT2ZLWlvIYjw6P/mYHHxA7/SUBiXqZUY=
 cloud.google.com/go/dataplex v1.25.2 h1:jgfG6iqPVJxNPSpVCxH4diHMFb87wNd0F1kDgU3XJCk=
 cloud.google.com/go/dataplex v1.25.2/go.mod h1:AH2/a7eCYvFP58scJGR7YlSY9qEhM8jq5IeOA/32IZ0=
+cloud.google.com/go/dataplex v1.26.0 h1:nu8/KrLR5v62L1lApGNgm61Oq+xaa2bS9rgc1csjqE0=
+cloud.google.com/go/dataplex v1.26.0/go.mod h1:12R9nlLUzxOscbb2HgoYnkGNibmv4sXEVMXxrdw2a90=
 cloud.google.com/go/dataproc/v2 v2.11.2 h1:KhC8wdLILpAs17yeTG6Miwg1v0nOP/OXD+9QNg3w6AQ=
 cloud.google.com/go/dataproc/v2 v2.11.2/go.mod h1:xwukBjtfiO4vMEa1VdqyFLqJmcv7t3lo+PbLDcTEw+g=
 cloud.google.com/go/datastream v1.14.1 h1:j+y0lUKm9pbDjJn0YcWxPI/hXNGUQ80GE6yrFuJC/JA=
@@ -1018,6 +1020,8 @@ gonum.org/v1/netlib v0.0.0-20190331212654-76723241ea4e/go.mod h1:kS+toOQn6AQKjmK
 google.golang.org/api v0.4.0/go.mod h1:8k5glujaEP+g9n7WNsDg8QP6cUVNI86fCNMcbazEtwE=
 google.golang.org/api v0.237.0 h1:MP7XVsGZesOsx3Q8WVa4sUdbrsTvDSOERd3Vh4xj/wc=
 google.golang.org/api v0.237.0/go.mod h1:cOVEm2TpdAGHL2z+UwyS+kmlGr3bVWQQ6sYEqkKje50=
+google.golang.org/api v0.239.0 h1:2hZKUnFZEy81eugPs4e2XzIJ5SOwQg0G82bpXD65Puo=
+google.golang.org/api v0.239.0/go.mod h1:cOVEm2TpdAGHL2z+UwyS+kmlGr3bVWQQ6sYEqkKje50=
 google.golang.org/appengine v1.1.0/go.mod h1:EbEs0AVv82hx2wNQdGPgUI5lhzA/G0D9YwlJXL52JkM=
 google.golang.org/appengine v1.4.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
 google.golang.org/appengine v1.5.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
