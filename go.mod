@@ -8,39 +8,39 @@ replace github.com/GoogleCloudPlatform/k8s-config-connector/mockgcp => ./mockgcp
 
 require (
 	cloud.google.com/go/accesscontextmanager v1.9.6
-	cloud.google.com/go/aiplatform v1.86.0
+	cloud.google.com/go/aiplatform v1.92.0
 	cloud.google.com/go/alloydb v1.14.0
-	cloud.google.com/go/apigateway v1.7.6
+	cloud.google.com/go/apigateway v1.7.7
 	cloud.google.com/go/apikeys v1.1.12
 	cloud.google.com/go/apphub v0.2.4
-	cloud.google.com/go/asset v1.21.0
+	cloud.google.com/go/asset v1.21.1
 	cloud.google.com/go/backupdr v1.3.1
 	cloud.google.com/go/batch v1.12.2
-	cloud.google.com/go/bigquery v1.67.0
+	cloud.google.com/go/bigquery v1.69.0
 	cloud.google.com/go/certificatemanager v1.9.5
 	cloud.google.com/go/cloudbuild v1.22.2
 	cloud.google.com/go/clouddms v1.8.7
 	cloud.google.com/go/cloudquotas v1.3.2
 	cloud.google.com/go/cloudtasks v1.13.6
-	cloud.google.com/go/compute v1.37.0
+	cloud.google.com/go/compute v1.39.0
 	cloud.google.com/go/datacatalog v1.26.0
 	cloud.google.com/go/dataflow v0.11.0
-	cloud.google.com/go/dataform v0.11.2
-	cloud.google.com/go/dataplex v1.25.2
-	cloud.google.com/go/dataproc/v2 v2.11.2
+	cloud.google.com/go/dataform v0.12.0
+	cloud.google.com/go/dataplex v1.25.3
+	cloud.google.com/go/dataproc/v2 v2.13.0
 	cloud.google.com/go/datastream v1.14.1
-	cloud.google.com/go/deploy v1.27.1
+	cloud.google.com/go/deploy v1.27.2
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/documentai v1.37.0
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/essentialcontacts v1.7.6
 	cloud.google.com/go/eventarc v1.15.5
 	cloud.google.com/go/firestore v1.18.0
-	cloud.google.com/go/gkebackup v1.7.0
+	cloud.google.com/go/gkebackup v1.8.0
 	cloud.google.com/go/gkemulticloud v1.5.3
 	cloud.google.com/go/iam v1.5.2
-	cloud.google.com/go/iap v1.11.1
-	cloud.google.com/go/kms v1.21.2
+	cloud.google.com/go/iap v1.11.2
+	cloud.google.com/go/kms v1.22.0
 	cloud.google.com/go/logging v1.13.0
 	cloud.google.com/go/managedkafka v0.4.0
 	cloud.google.com/go/metastore v1.14.7
@@ -58,11 +58,11 @@ require (
 	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
 	cloud.google.com/go/redis v1.18.2
 	cloud.google.com/go/resourcemanager v1.10.6
-	cloud.google.com/go/secretmanager v1.14.7
+	cloud.google.com/go/secretmanager v1.15.0
 	cloud.google.com/go/securesourcemanager v1.1.1
 	cloud.google.com/go/security v1.18.5
-	cloud.google.com/go/spanner v1.81.0
-	cloud.google.com/go/speech v1.27.1
+	cloud.google.com/go/spanner v1.83.0
+	cloud.google.com/go/speech v1.28.0
 	cloud.google.com/go/storage v1.55.0
 	cloud.google.com/go/vmwareengine v1.3.5
 	cloud.google.com/go/workflows v1.14.2
@@ -108,7 +108,7 @@ require (
 	golang.org/x/sync v0.15.0
 	golang.org/x/time v0.12.0
 	google.golang.org/api v0.237.0
-	google.golang.org/genproto v0.0.0-20250512202823-5a2f75b736a9
+	google.golang.org/genproto v0.0.0-20250707201910-8d1bb00bc6a7
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822
 	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822
@@ -153,10 +153,10 @@ require (
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.23.0 // indirect
-	cloud.google.com/go v0.121.1 // indirect
+	cloud.google.com/go v0.121.2 // indirect
 	cloud.google.com/go/auth v0.16.2 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
-	cloud.google.com/go/bigtable v1.37.0
+	cloud.google.com/go/bigtable v1.38.0
 	cloud.google.com/go/compute/metadata v0.7.0 // indirect
 	cloud.google.com/go/longrunning v0.6.7
 	dario.cat/mergo v1.0.0 // indirect
