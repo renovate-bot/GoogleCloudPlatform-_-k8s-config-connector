@@ -21,6 +21,8 @@ cloud.google.com/go/apphub v0.2.4 h1:lhsd/6+16NUshw8c52T+DfMaAz04SX6ItMr8caGbtgY
 cloud.google.com/go/apphub v0.2.4/go.mod h1:QJw0OWQIQv/NvBz2/RJGAD6iJTLamf3vqOEsvFMixHw=
 cloud.google.com/go/asset v1.21.0 h1:AtsFIJU1gH3jXHf+2cyugTkpOPT8VYyjCK2yNmQltvg=
 cloud.google.com/go/asset v1.21.0/go.mod h1:0lMJ0STdyImZDSCB8B3i/+lzIquLBpJ9KZ4pyRvzccM=
+cloud.google.com/go/asset v1.21.1 h1:i55wWC/EwVdHMyJgRfbLp/L6ez4nQuOpZwSxkuqN9ek=
+cloud.google.com/go/asset v1.21.1/go.mod h1:7AzY1GCC+s1O73yzLM1IpHFLHz3ws2OigmCpOQHwebk=
 cloud.google.com/go/auth v0.16.2 h1:QvBAGFPLrDeoiNjyfVunhQ10HKNYuOwZ5noee0M5df4=
 cloud.google.com/go/auth v0.16.2/go.mod h1:sRBas2Y1fB1vZTdurouM0AzuYQBMZinrUYL8EufhtEA=
 cloud.google.com/go/auth/oauth2adapt v0.2.8 h1:keo8NaayQZ6wimpNSmW5OPc283g65QNIiLpZnkHRbnc=
