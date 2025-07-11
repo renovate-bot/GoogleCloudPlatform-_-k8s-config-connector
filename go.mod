@@ -42,7 +42,7 @@ require (
 	cloud.google.com/go/iap v1.11.1
 	cloud.google.com/go/kms v1.21.2
 	cloud.google.com/go/logging v1.13.0
-	cloud.google.com/go/managedkafka v0.4.0
+	cloud.google.com/go/managedkafka v0.7.0
 	cloud.google.com/go/metastore v1.14.7
 	cloud.google.com/go/monitoring v1.24.2
 	cloud.google.com/go/netapp v1.7.1
@@ -107,7 +107,7 @@ require (
 	golang.org/x/oauth2 v0.30.0
 	golang.org/x/sync v0.15.0
 	golang.org/x/time v0.12.0
-	google.golang.org/api v0.237.0
+	google.golang.org/api v0.239.0
 	google.golang.org/genproto v0.0.0-20250512202823-5a2f75b736a9
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822
 	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237

@@ -89,6 +89,8 @@ cloud.google.com/go/longrunning v0.6.7 h1:IGtfDWHhQCgCjwQjV9iiLnUta9LBCo8R9QmAFs
 cloud.google.com/go/longrunning v0.6.7/go.mod h1:EAFV3IZAKmM56TyiE6VAP3VoTzhZzySwI/YI1s/nRsY=
 cloud.google.com/go/managedkafka v0.4.0 h1:/snDok/h6TZKw0ubmfj/LYIwSn16mWBoBI2OEl7ldIA=
 cloud.google.com/go/managedkafka v0.4.0/go.mod h1:AUCV9FeT5IbuIf4ctH6TsnovE/KuIPE6Mp/YowkTyx0=
+cloud.google.com/go/managedkafka v0.7.0 h1:iq8a6hQiZN31lxclaEItx8znhsDmG8b4aOGuFRM2mwE=
+cloud.google.com/go/managedkafka v0.7.0/go.mod h1:mYuHJhUaC9m0n8fbdAMdYfG9e242/13R3GMUz/dDRsM=
 cloud.google.com/go/metastore v1.14.7 h1:dLm59AHHZCorveCylj7c2iWhkQsmMIeWTsV+tG/BXtY=
 cloud.google.com/go/metastore v1.14.7/go.mod h1:0dka99KQofeUgdfu+K/Jk1KeT9veWZlxuZdJpZPtuYU=
 cloud.google.com/go/monitoring v1.24.2 h1:5OTsoJ1dXYIiMiuL+sYscLc9BumrL3CarVLL7dd7lHM=
@@ -1018,6 +1020,8 @@ gonum.org/v1/netlib v0.0.0-20190331212654-76723241ea4e/go.mod h1:kS+toOQn6AQKjmK
 google.golang.org/api v0.4.0/go.mod h1:8k5glujaEP+g9n7WNsDg8QP6cUVNI86fCNMcbazEtwE=
 google.golang.org/api v0.237.0 h1:MP7XVsGZesOsx3Q8WVa4sUdbrsTvDSOERd3Vh4xj/wc=
 google.golang.org/api v0.237.0/go.mod h1:cOVEm2TpdAGHL2z+UwyS+kmlGr3bVWQQ6sYEqkKje50=
+google.golang.org/api v0.239.0 h1:2hZKUnFZEy81eugPs4e2XzIJ5SOwQg0G82bpXD65Puo=
+google.golang.org/api v0.239.0/go.mod h1:cOVEm2TpdAGHL2z+UwyS+kmlGr3bVWQQ6sYEqkKje50=
 google.golang.org/appengine v1.1.0/go.mod h1:EbEs0AVv82hx2wNQdGPgUI5lhzA/G0D9YwlJXL52JkM=
 google.golang.org/appengine v1.4.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
 google.golang.org/appengine v1.5.0/go.mod h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=
