@@ -61,7 +61,7 @@ require (
 	cloud.google.com/go/secretmanager v1.14.7
 	cloud.google.com/go/securesourcemanager v1.1.1
 	cloud.google.com/go/security v1.18.5
-	cloud.google.com/go/spanner v1.81.0
+	cloud.google.com/go/spanner v1.83.0
 	cloud.google.com/go/speech v1.27.1
 	cloud.google.com/go/storage v1.55.0
 	cloud.google.com/go/vmwareengine v1.3.5
@@ -153,7 +153,7 @@ require (
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.23.0 // indirect
-	cloud.google.com/go v0.121.1 // indirect
+	cloud.google.com/go v0.121.2 // indirect
 	cloud.google.com/go/auth v0.16.2 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/bigtable v1.37.0
