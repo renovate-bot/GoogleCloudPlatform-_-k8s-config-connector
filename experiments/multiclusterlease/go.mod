@@ -6,7 +6,7 @@ replace github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclu
 
 require (
 	github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclusterlease v0.0.0-00010101000000-000000000000
-	github.com/go-logr/logr v0.1.0
+	github.com/go-logr/logr v1.4.3
 	github.com/onsi/ginkgo v1.11.0
 	github.com/onsi/gomega v1.8.1
 	k8s.io/apimachinery v0.17.2
