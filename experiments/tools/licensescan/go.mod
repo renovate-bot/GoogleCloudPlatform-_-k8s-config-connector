@@ -3,7 +3,7 @@ module github.com/GoogleCloudPlatform/k8s-config-connector/experiments/tools/lic
 go 1.24.0
 
 require (
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.9.1
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/yaml v1.4.0
 )
