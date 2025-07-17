@@ -93,7 +93,7 @@ require (
 	github.com/onsi/gomega v1.36.1
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.20.4
-	github.com/prometheus/procfs v0.15.1
+	github.com/prometheus/procfs v0.17.0
 	github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749
 	github.com/shurcooL/vfsgen v0.0.0-20181202132449-6a9ea43bcacd
 	github.com/spf13/cobra v1.8.1
