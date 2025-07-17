@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.2
 
 require (
-	github.com/Masterminds/semver/v3 v3.2.1
+	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/go-logr/logr v1.4.1
 	github.com/gobuffalo/flect v1.0.2
 	github.com/google/cel-go v0.17.7
