@@ -28,7 +28,7 @@ require (
 	sigs.k8s.io/kubebuilder-declarative-pattern v0.15.0-beta.1.0.20240614185435-a248ed1e894c
 	sigs.k8s.io/kubebuilder-declarative-pattern/applylib v0.0.0-20240830014331-1a63d5a3bb9d
 	sigs.k8s.io/kustomize/kstatus v0.0.2-0.20200509233124-065f70705d4d
-	tailscale.com v1.62.0
+	tailscale.com v1.86.1
 )
 
 require (
