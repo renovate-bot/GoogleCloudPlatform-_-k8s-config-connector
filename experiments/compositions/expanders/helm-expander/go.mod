@@ -10,7 +10,7 @@ require (
 	k8s.io/apimachinery v0.29.1
 	sigs.k8s.io/controller-runtime v0.17.2
 	sigs.k8s.io/yaml v1.4.0
-	tailscale.com v1.62.0
+	tailscale.com v1.86.2
 )
 
 require (
