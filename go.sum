@@ -131,6 +131,8 @@ cloud.google.com/go/spanner v1.81.0 h1:p2u1jX+VSz5cp9X5cehfBSDfezxpNzSTAcNHR3FEu
 cloud.google.com/go/spanner v1.81.0/go.mod h1:3yqzHZvK52zLw10mNLG8MefCEYp3iRFJryTLf5u+mJg=
 cloud.google.com/go/speech v1.27.1 h1:+OktATNlQc+4WH78OrQadIP4CzXb9mBucdDGCO1NrlI=
 cloud.google.com/go/speech v1.27.1/go.mod h1:efCfklHFL4Flxcdt9gpEMEJh9MupaBzw3QiSOVeJ6ck=
+cloud.google.com/go/speech v1.28.0 h1:9AuiAxDTmh/aeREtw+/0e7aI27T5QN4fK5lhssc9MxA=
+cloud.google.com/go/speech v1.28.0/go.mod h1:hJf6oa+1rzCW/CeDE/qCXedV20B2TXEUje5iaGwW+JI=
 cloud.google.com/go/storage v1.55.0 h1:NESjdAToN9u1tmhVqhXCaCwYBuvEhZLLv0gBr+2znf0=
 cloud.google.com/go/storage v1.55.0/go.mod h1:ztSmTTwzsdXe5syLVS0YsbFxXuvEmEyZj7v7zChEmuY=
 cloud.google.com/go/vmwareengine v1.3.5 h1:OsGd1SB91y9fDuzdzFngMv4UcT4cqmRxjsCsS4Xmcu8=
