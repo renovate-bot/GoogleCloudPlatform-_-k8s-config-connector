@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.2
 
 require (
-	github.com/GoogleCloudPlatform/kubectl-ai/gollm v0.0.0-20250423144723-a651944aad2d
+	github.com/GoogleCloudPlatform/kubectl-ai/gollm e043b97c3d39
 	github.com/fatih/color v1.18.0
 	github.com/gdamore/tcell/v2 v2.7.1
 	github.com/go-git/go-git/v5 v5.13.2
