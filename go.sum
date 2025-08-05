@@ -123,6 +123,8 @@ cloud.google.com/go/resourcemanager v1.10.6 h1:LIa8kKE8HF71zm976oHMqpWFiaDHVw/H1
 cloud.google.com/go/resourcemanager v1.10.6/go.mod h1:VqMoDQ03W4yZmxzLPrB+RuAoVkHDS5tFUUQUhOtnRTg=
 cloud.google.com/go/secretmanager v1.14.7 h1:VkscIRzj7GcmZyO4z9y1EH7Xf81PcoiAo7MtlD+0O80=
 cloud.google.com/go/secretmanager v1.14.7/go.mod h1:uRuB4F6NTFbg0vLQ6HsT7PSsfbY7FqHbtJP1J94qxGc=
+cloud.google.com/go/secretmanager v1.15.0 h1:RtkCMgTpaBMbzozcRUGfZe46jb9a3qh5EdEtVRUATF8=
+cloud.google.com/go/secretmanager v1.15.0/go.mod h1:1hQSAhKK7FldiYw//wbR/XPfPc08eQ81oBsnRUHEvUc=
 cloud.google.com/go/securesourcemanager v1.1.1 h1:raOxRsR507ALLlc5yG79LK7O2TuDbD7o7IyHwyCoYAE=
 cloud.google.com/go/securesourcemanager v1.1.1/go.mod h1:qMVTY4bzBRhcrUe0B8KvDCK5mhGQD6PyrHbzqOn3TLQ=
 cloud.google.com/go/security v1.18.5 h1:6hqzvuwC8za9jyCTxygmEHnp4vZ8hfhwKVArxSCAVCo=
