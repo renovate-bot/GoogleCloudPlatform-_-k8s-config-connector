@@ -12,7 +12,7 @@ require (
 	github.com/GoogleCloudPlatform/k8s-config-connector/experiments/multiclusterlease v0.0.0-00010101000000-000000000000
 	github.com/go-logr/logr v1.4.2
 	github.com/google/uuid v1.6.0
-	go.uber.org/zap v1.26.0
+	go.uber.org/zap v1.27.0
 	google.golang.org/api v0.224.0
 	k8s.io/apimachinery v0.27.11
 	k8s.io/client-go v0.27.11
