@@ -435,7 +435,7 @@ go_repository(
 go_repository(
     name = "org_golang_google_appengine",
     importpath = "google.golang.org/appengine",
-    tag = "v1.6.7",
+    tag = "v2.0.6",
 )
 
 go_repository(
