@@ -1,9 +1,9 @@
 module github.com/GoogleCloudPlatform/declarative-resource-client-library
 
-go 1.19
+go 1.21
 
 require (
-	bitbucket.org/creachadair/stringset v0.0.8
+	bitbucket.org/creachadair/stringset v0.0.14
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/google/go-cmp v0.5.8
