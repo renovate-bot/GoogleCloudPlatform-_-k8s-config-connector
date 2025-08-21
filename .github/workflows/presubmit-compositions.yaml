@@ -33,7 +33,7 @@ jobs:
     timeout-minutes: 12
     steps:
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Set up Go
@@ -55,7 +55,7 @@ jobs:
         with:
           go-version: '1.22'
           stable: true
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: verify goimports
         run: |
           ./experiments/compositions/scripts/github-actions/verify-goimports.sh
@@ -67,7 +67,7 @@ jobs:
         with:
           go-version: '1.22'
           stable: true
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: |
           ./experiments/compositions/scripts/github-actions/format-gomod.sh
       - run: |
@@ -83,7 +83,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: "verify expander-helm in a kind cluster"
         run: |
           ./experiments/compositions/scripts/github-actions/helm-test.sh
@@ -91,7 +91,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: "verify expander-getter in a kind cluster"
         run: |
           ./experiments/compositions/scripts/github-actions/getter-test.sh
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: "verify expander-jinja2 in a kind cluster"
         run: |
           ./experiments/compositions/scripts/github-actions/jinja2-test.sh
@@ -107,7 +107,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: "run e2e tests"
         run: |
           ./experiments/compositions/scripts/github-actions/e2e-test.sh
