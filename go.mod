@@ -54,7 +54,7 @@ require (
 	cloud.google.com/go/orgpolicy v1.15.0
 	cloud.google.com/go/privilegedaccessmanager v0.2.5
 	cloud.google.com/go/profiler v0.4.1
-	cloud.google.com/go/pubsub v1.49.0
+	cloud.google.com/go/pubsub v1.50.0
 	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
 	cloud.google.com/go/redis v1.18.2
 	cloud.google.com/go/resourcemanager v1.10.6
@@ -133,6 +133,7 @@ require go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 
 require (
 	cloud.google.com/go/osconfig v1.14.6 // indirect
+	cloud.google.com/go/pubsub/v2 v2.0.0 // indirect
 	github.com/envoyproxy/go-control-plane/envoy v1.32.4 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
@@ -153,7 +154,7 @@ require (
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.24.0 // indirect
-	cloud.google.com/go v0.121.2 // indirect
+	cloud.google.com/go v0.121.4 // indirect
 	cloud.google.com/go/auth v0.16.3 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/bigtable v1.38.0
