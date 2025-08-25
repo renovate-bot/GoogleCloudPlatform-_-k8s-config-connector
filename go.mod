@@ -22,7 +22,7 @@ require (
 	cloud.google.com/go/clouddms v1.8.7
 	cloud.google.com/go/cloudquotas v1.3.2
 	cloud.google.com/go/cloudtasks v1.13.6
-	cloud.google.com/go/compute v1.38.0
+	cloud.google.com/go/compute v1.44.0
 	cloud.google.com/go/datacatalog v1.26.0
 	cloud.google.com/go/dataflow v0.11.0
 	cloud.google.com/go/dataform v0.12.0
@@ -155,7 +155,7 @@ require cloud.google.com/go/billing v1.20.4 // indirect
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.24.0 // indirect
-	cloud.google.com/go v0.121.2 // indirect
+	cloud.google.com/go v0.121.4 // indirect
 	cloud.google.com/go/auth v0.16.3 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/bigtable v1.38.0
