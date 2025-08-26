@@ -11,14 +11,14 @@ replace github.com/hashicorp/terraform-provider-google-beta => ../third_party/gi
 require (
 	cloud.google.com/go/accesscontextmanager v1.9.6
 	cloud.google.com/go/aiplatform v1.99.0
-	cloud.google.com/go/apigateway v1.7.6
+	cloud.google.com/go/apigateway v1.7.7
 	cloud.google.com/go/batch v1.12.2
 	cloud.google.com/go/bigtable v1.38.0
 	cloud.google.com/go/billing v1.20.4
 	cloud.google.com/go/clouddms v1.8.7
-	cloud.google.com/go/compute v1.38.0
-	cloud.google.com/go/dataplex v1.25.3
-	cloud.google.com/go/dataproc/v2 v2.11.2
+	cloud.google.com/go/compute v1.44.0
+	cloud.google.com/go/dataplex v1.26.0
+	cloud.google.com/go/dataproc/v2 v2.14.0
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/iam v1.5.2
@@ -27,7 +27,7 @@ require (
 	cloud.google.com/go/networkservices v0.5.0
 	cloud.google.com/go/notebooks v1.12.6
 	cloud.google.com/go/orgpolicy v1.15.0
-	cloud.google.com/go/osconfig v1.14.6
+	cloud.google.com/go/osconfig v1.15.0
 	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
 	cloud.google.com/go/storage v1.55.0
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
@@ -36,11 +36,11 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
 	golang.org/x/oauth2 v0.30.0
 	google.golang.org/api v0.246.0
-	google.golang.org/genproto v0.0.0-20250603155806-513f23925822
-	google.golang.org/genproto/googleapis/api v0.0.0-20250804133106-a7a43d27e69b
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250804133106-a7a43d27e69b
+	google.golang.org/genproto v0.0.0-20250826171959-ef028d996bc1
+	google.golang.org/genproto/googleapis/api v0.0.0-20250818200422-3122310a409c
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c
 	google.golang.org/grpc v1.74.2
-	google.golang.org/protobuf v1.36.7
+	google.golang.org/protobuf v1.36.8
 	k8s.io/api v0.32.1
 	k8s.io/apimachinery v0.32.1
 	k8s.io/klog/v2 v2.130.1
@@ -51,7 +51,7 @@ require (
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.24.0 // indirect
-	cloud.google.com/go v0.121.2 // indirect
+	cloud.google.com/go v0.121.4 // indirect
 	cloud.google.com/go/auth v0.16.3 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.7.0 // indirect
