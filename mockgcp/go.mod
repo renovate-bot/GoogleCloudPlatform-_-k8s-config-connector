@@ -37,10 +37,10 @@ require (
 	golang.org/x/oauth2 v0.30.0
 	google.golang.org/api v0.246.0
 	google.golang.org/genproto v0.0.0-20250603155806-513f23925822
-	google.golang.org/genproto/googleapis/api v0.0.0-20250804133106-a7a43d27e69b
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250804133106-a7a43d27e69b
+	google.golang.org/genproto/googleapis/api v0.0.0-20250826171959-ef028d996bc1
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c
 	google.golang.org/grpc v1.74.2
-	google.golang.org/protobuf v1.36.7
+	google.golang.org/protobuf v1.36.8
 	k8s.io/api v0.32.1
 	k8s.io/apimachinery v0.32.1
 	k8s.io/klog/v2 v2.130.1
