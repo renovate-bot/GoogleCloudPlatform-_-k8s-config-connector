@@ -54,7 +54,7 @@ require (
 	cloud.google.com/go/notebooks v1.12.6
 	cloud.google.com/go/orchestration v1.11.9
 	cloud.google.com/go/orgpolicy v1.15.0
-	cloud.google.com/go/privilegedaccessmanager v0.2.5
+	cloud.google.com/go/privilegedaccessmanager v0.3.0
 	cloud.google.com/go/profiler v0.4.1
 	cloud.google.com/go/pubsub v1.49.0
 	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
