@@ -93,7 +93,7 @@ require (
 	github.com/hashicorp/terraform-provider-google-beta v0.0.0-00010101000000-000000000000
 	github.com/nasa9084/go-openapi v0.0.0-20200604141640-2875b7376353
 	github.com/olekukonko/tablewriter v0.0.5
-	github.com/onsi/gomega v1.36.1
+	github.com/onsi/gomega v1.38.2
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.20.4
 	github.com/prometheus/procfs v0.15.1
@@ -149,6 +149,7 @@ require (
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
+	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/telemetry v0.0.0-20250908211612-aef8a434d053 // indirect
 	golang.org/x/tools/godoc v0.1.0-deprecated // indirect
 	gonum.org/v1/gonum v0.16.0 // indirect
@@ -208,7 +209,7 @@ require (
 	github.com/google/btree v1.1.3 // indirect
 	github.com/google/go-cpy v0.0.0-20211218193943-a9c933c06932 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/google/pprof v0.0.0-20241029153458-d1b30febd7db // indirect
+	github.com/google/pprof v0.0.0-20250403155104-27863c87afa6 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.6 // indirect
