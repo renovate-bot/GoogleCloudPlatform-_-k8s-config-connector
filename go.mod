@@ -66,7 +66,7 @@ require (
 	cloud.google.com/go/security v1.18.5
 	cloud.google.com/go/spanner v1.82.0
 	cloud.google.com/go/speech v1.27.1
-	cloud.google.com/go/storage v1.55.0
+	cloud.google.com/go/storage v1.56.0
 	cloud.google.com/go/vmwareengine v1.3.5
 	cloud.google.com/go/workflows v1.14.2
 	cloud.google.com/go/workstations v1.1.1
@@ -110,11 +110,11 @@ require (
 	golang.org/x/oauth2 v0.30.0
 	golang.org/x/sync v0.17.0
 	golang.org/x/time v0.12.0
-	google.golang.org/api v0.246.0
+	google.golang.org/api v0.247.0
 	google.golang.org/genproto v0.0.0-20250603155806-513f23925822
-	google.golang.org/genproto/googleapis/api v0.0.0-20250804133106-a7a43d27e69b
+	google.golang.org/genproto/googleapis/api v0.0.0-20250818200422-3122310a409c
 	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250804133106-a7a43d27e69b
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c
 	google.golang.org/grpc v1.74.2
 	google.golang.org/protobuf v1.36.7
 	gopkg.in/dnaeon/go-vcr.v3 v3.2.0
@@ -136,6 +136,9 @@ require go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 
 require (
 	cloud.google.com/go/osconfig v1.14.6 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.27.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.53.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.53.0 // indirect
 	github.com/envoyproxy/go-control-plane/envoy v1.32.4 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
@@ -149,6 +152,7 @@ require (
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
+	go.opentelemetry.io/contrib/detectors/gcp v1.36.0 // indirect
 	golang.org/x/telemetry v0.0.0-20250908211612-aef8a434d053 // indirect
 	golang.org/x/tools/godoc v0.1.0-deprecated // indirect
 	gonum.org/v1/gonum v0.16.0 // indirect
@@ -159,11 +163,11 @@ require (
 require (
 	bitbucket.org/creachadair/stringset v0.0.8 // indirect
 	cel.dev/expr v0.24.0 // indirect
-	cloud.google.com/go v0.121.2 // indirect
-	cloud.google.com/go/auth v0.16.3 // indirect
+	cloud.google.com/go v0.121.6 // indirect
+	cloud.google.com/go/auth v0.16.4 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
-	cloud.google.com/go/bigtable v1.38.0
-	cloud.google.com/go/compute/metadata v0.7.0 // indirect
+	cloud.google.com/go/bigtable v1.40.1
+	cloud.google.com/go/compute/metadata v0.8.0 // indirect
 	cloud.google.com/go/longrunning v0.6.7
 	dario.cat/mergo v1.0.0 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
