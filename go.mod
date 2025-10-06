@@ -40,7 +40,7 @@ require (
 	cloud.google.com/go/gkebackup v1.8.0
 	cloud.google.com/go/gkemulticloud v1.5.3
 	cloud.google.com/go/iam v1.5.2
-	cloud.google.com/go/iap v1.11.2
+	cloud.google.com/go/iap v1.11.3
 	cloud.google.com/go/kms v1.22.0
 	cloud.google.com/go/logging v1.13.0
 	cloud.google.com/go/managedkafka v0.4.0
