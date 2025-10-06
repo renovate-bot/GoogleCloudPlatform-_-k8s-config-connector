@@ -24,7 +24,7 @@ require (
 	cloud.google.com/go/cloudquotas v1.3.2
 	cloud.google.com/go/cloudtasks v1.13.6
 	cloud.google.com/go/compute v1.38.0
-	cloud.google.com/go/datacatalog v1.26.0
+	cloud.google.com/go/datacatalog v1.26.1
 	cloud.google.com/go/dataflow v0.11.0
 	cloud.google.com/go/dataform v0.12.0
 	cloud.google.com/go/dataplex v1.25.3
