@@ -131,6 +131,8 @@ cloud.google.com/go/secretmanager v1.14.7 h1:VkscIRzj7GcmZyO4z9y1EH7Xf81PcoiAo7M
 cloud.google.com/go/secretmanager v1.14.7/go.mod h1:uRuB4F6NTFbg0vLQ6HsT7PSsfbY7FqHbtJP1J94qxGc=
 cloud.google.com/go/securesourcemanager v1.1.1 h1:raOxRsR507ALLlc5yG79LK7O2TuDbD7o7IyHwyCoYAE=
 cloud.google.com/go/securesourcemanager v1.1.1/go.mod h1:qMVTY4bzBRhcrUe0B8KvDCK5mhGQD6PyrHbzqOn3TLQ=
+cloud.google.com/go/securesourcemanager v1.4.1 h1:kG3QM04a/n5F7bIMM5dDwT1G2eTJk2vZqX7Lxp24pjE=
+cloud.google.com/go/securesourcemanager v1.4.1/go.mod h1:42Zu1wFChieJQIIjnD2VNEQQe8cUC+a4c7cS4Mnd/dM=
 cloud.google.com/go/security v1.18.5 h1:6hqzvuwC8za9jyCTxygmEHnp4vZ8hfhwKVArxSCAVCo=
 cloud.google.com/go/security v1.18.5/go.mod h1:D1wuUkDwGqTKD0Nv7d4Fn2Dc53POJSmO4tlg1K1iS7s=
 cloud.google.com/go/spanner v1.82.0 h1:w9uO8RqEoBooBLX4nqV1RtgudyU2ZX780KTLRgeVg60=
