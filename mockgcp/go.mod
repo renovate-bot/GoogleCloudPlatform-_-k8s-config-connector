@@ -20,7 +20,7 @@ require (
 	cloud.google.com/go/compute v1.38.0
 	cloud.google.com/go/dataplex v1.25.3
 	cloud.google.com/go/dataproc/v2 v2.11.2
-	cloud.google.com/go/discoveryengine v1.15.0
+	cloud.google.com/go/discoveryengine v1.21.1
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/firestore v1.19.0
 	cloud.google.com/go/iam v1.5.2
