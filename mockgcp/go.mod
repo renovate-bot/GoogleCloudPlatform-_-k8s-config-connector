@@ -12,7 +12,7 @@ require (
 	cloud.google.com/go/accesscontextmanager v1.9.6
 	cloud.google.com/go/aiplatform v1.99.0
 	cloud.google.com/go/analytics v0.30.0
-	cloud.google.com/go/apigateway v1.7.6
+	cloud.google.com/go/apigateway v1.7.7
 	cloud.google.com/go/batch v1.12.2
 	cloud.google.com/go/bigtable v1.38.0
 	cloud.google.com/go/billing v1.20.4
