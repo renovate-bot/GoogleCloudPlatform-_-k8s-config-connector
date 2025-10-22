@@ -20,7 +20,7 @@ require (
 	cloud.google.com/go/compute v1.38.0
 	cloud.google.com/go/dataplex v1.25.3
 	cloud.google.com/go/dataproc/v2 v2.11.2
-	cloud.google.com/go/discoveryengine v1.15.0
+	cloud.google.com/go/discoveryengine v1.22.0
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/firestore v1.19.0
 	cloud.google.com/go/iam v1.5.2
@@ -160,7 +160,7 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.2 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	github.com/zclconf/go-cty v1.16.3 // indirect
+	github.com/zclconf/go-cty v1.16.4 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect

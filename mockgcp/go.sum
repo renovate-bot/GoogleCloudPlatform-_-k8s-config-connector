@@ -66,6 +66,8 @@ cloud.google.com/go/deploy v1.27.2 h1:C0VqBhFyQFp6+xgPHZAD7LeRA4XGy5YLzGmPQ2NhlL
 cloud.google.com/go/deploy v1.27.2/go.mod h1:4NHWE7ENry2A4O1i/4iAPfXHnJCZ01xckAKpZQwhg1M=
 cloud.google.com/go/discoveryengine v1.15.0 h1:CHUN1mbs5iTqWJRuU6rZCvcuV5iVMr/rW8Kr1ivn7p4=
 cloud.google.com/go/discoveryengine v1.15.0/go.mod h1:WIstQLougDQ6D8cza4icHFfGGzXsI4QNwTEWdNfRJ8g=
+cloud.google.com/go/discoveryengine v1.22.0 h1:NQFGHmvIPHwZW/IT8zfMFPjJDwaJAlrMBL/FTi2toLU=
+cloud.google.com/go/discoveryengine v1.22.0/go.mod h1:wwjQ1QH8MBe8iQS1VxJCIy+WR4e0CXAoI7mDfwnKiNk=
 cloud.google.com/go/documentai v1.38.1 h1:6uWDoi/wAT8D9belR9Q1n2fFtY6YJ+/3aj6rR9mAlbY=
 cloud.google.com/go/documentai v1.38.1/go.mod h1:KmlLO93F7GRU8dENXRxvt+7V8o7eCG6Y6WDitKbcYJs=
 cloud.google.com/go/edgecontainer v1.4.3 h1:9tfGCicvrki927T+hGMB0yYmwIbRuZY6JR1/awrKiZ0=
@@ -595,6 +597,8 @@ github.com/zclconf/go-cty v1.2.0/go.mod h1:hOPWgoHbaTUnI5k4D2ld+GRpFJSCe6bCM7m1q
 github.com/zclconf/go-cty v1.10.0/go.mod h1:vVKLxnk3puL4qRAv72AO+W99LUD4da90g3uUAzyuvAk=
 github.com/zclconf/go-cty v1.16.3 h1:osr++gw2T61A8KVYHoQiFbFd1Lh3JOCXc/jFLJXKTxk=
 github.com/zclconf/go-cty v1.16.3/go.mod h1:VvMs5i0vgZdhYawQNq5kePSpLAoz8u1xvZgrPIxfnZE=
+github.com/zclconf/go-cty v1.16.4 h1:QGXaag7/7dCzb+odlGrgr+YmYZFaOCMW6DEpS+UD1eE=
+github.com/zclconf/go-cty v1.16.4/go.mod h1:VvMs5i0vgZdhYawQNq5kePSpLAoz8u1xvZgrPIxfnZE=
 github.com/zclconf/go-cty-debug v0.0.0-20191215020915-b22d67c1ba0b/go.mod h1:ZRKQfBXbGkpdV6QMzT3rU1kSTAnfu1dO8dPKjYprgj8=
 github.com/zclconf/go-cty-debug v0.0.0-20240509010212-0d6042c53940 h1:4r45xpDWB6ZMSMNJFMOjqrGHynW3DIBuR2H9j0ug+Mo=
 github.com/zclconf/go-cty-debug v0.0.0-20240509010212-0d6042c53940/go.mod h1:CmBdvvj3nqzfzJ6nTCIwDTPZ56aVGvDrmztiO5g3qrM=
