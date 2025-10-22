@@ -40,10 +40,10 @@ require (
 	golang.org/x/oauth2 v0.30.0
 	google.golang.org/api v0.247.0
 	google.golang.org/genproto v0.0.0-20250603155806-513f23925822
-	google.golang.org/genproto/googleapis/api v0.0.0-20250818200422-3122310a409c
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c
+	google.golang.org/genproto/googleapis/api v0.0.0-20251022142026-3a174f9686a8
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251014184007-4626949a642f
 	google.golang.org/grpc v1.74.2
-	google.golang.org/protobuf v1.36.7
+	google.golang.org/protobuf v1.36.10
 	k8s.io/api v0.32.1
 	k8s.io/apimachinery v0.32.1
 	k8s.io/klog/v2 v2.130.1
@@ -160,7 +160,7 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.2 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	github.com/zclconf/go-cty v1.16.3 // indirect
+	github.com/zclconf/go-cty v1.16.4 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
