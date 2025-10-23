@@ -64,7 +64,7 @@ require (
 	cloud.google.com/go/secretmanager v1.14.7
 	cloud.google.com/go/securesourcemanager v1.1.1
 	cloud.google.com/go/security v1.18.5
-	cloud.google.com/go/spanner v1.82.0
+	cloud.google.com/go/spanner v1.86.1
 	cloud.google.com/go/speech v1.27.1
 	cloud.google.com/go/storage v1.56.0
 	cloud.google.com/go/vmwareengine v1.3.5
