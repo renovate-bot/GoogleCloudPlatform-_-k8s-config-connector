@@ -74,7 +74,7 @@ jobs:
           path: unittest_result.json
           retention-days: 5
   pause-tests:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
@@ -86,7 +86,7 @@ jobs:
           ./scripts/github-actions/ga-pause-test.sh
 
   tests-e2e-fixtures-vcr:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -98,7 +98,7 @@ jobs:
           ./scripts/github-actions/tests-e2e-fixtures-vcr.sh
 
   build-images:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - name: Free up disk space
