@@ -40,7 +40,7 @@ require (
 	cloud.google.com/go/eventarc v1.15.5
 	cloud.google.com/go/firestore v1.19.0
 	cloud.google.com/go/gkebackup v1.8.0
-	cloud.google.com/go/gkemulticloud v1.5.3
+	cloud.google.com/go/gkemulticloud v1.5.4
 	cloud.google.com/go/iam v1.5.2
 	cloud.google.com/go/iap v1.11.2
 	cloud.google.com/go/kms v1.22.0
