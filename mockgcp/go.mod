@@ -10,7 +10,7 @@ replace github.com/hashicorp/terraform-provider-google-beta => ../third_party/gi
 
 require (
 	cloud.google.com/go/accesscontextmanager v1.9.6
-	cloud.google.com/go/aiplatform v1.99.0
+	cloud.google.com/go/aiplatform v1.109.0
 	cloud.google.com/go/analytics v0.30.0
 	cloud.google.com/go/apigateway v1.7.6
 	cloud.google.com/go/batch v1.12.2
