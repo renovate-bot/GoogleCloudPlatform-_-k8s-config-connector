@@ -24,7 +24,7 @@ require (
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/firestore v1.19.0
 	cloud.google.com/go/iam v1.5.2
-	cloud.google.com/go/iap v1.11.2
+	cloud.google.com/go/iap v1.11.3
 	cloud.google.com/go/logging v1.13.0
 	cloud.google.com/go/longrunning v0.6.7
 	cloud.google.com/go/networksecurity v0.10.6
