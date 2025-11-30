@@ -99,6 +99,8 @@ cloud.google.com/go/memorystore v0.3.0 h1:yTc0nMqq736vzjgWdVZzDE4R3zlg13UYVMC6ng
 cloud.google.com/go/memorystore v0.3.0/go.mod h1:TInRFiCShr6X8q1OZDdQp/XuIX+eeVXPjKNtjvN8180=
 cloud.google.com/go/metastore v1.14.7 h1:dLm59AHHZCorveCylj7c2iWhkQsmMIeWTsV+tG/BXtY=
 cloud.google.com/go/metastore v1.14.7/go.mod h1:0dka99KQofeUgdfu+K/Jk1KeT9veWZlxuZdJpZPtuYU=
+cloud.google.com/go/metastore v1.14.8 h1:nfyUDD9AeKIs6btY5buQ1No0OVco20WpX9wIruL8UOA=
+cloud.google.com/go/metastore v1.14.8/go.mod h1:h1XI2LpD4ohJhQYn9TwXqKb5sVt6KSo47ft96SiFF1s=
 cloud.google.com/go/monitoring v1.24.2 h1:5OTsoJ1dXYIiMiuL+sYscLc9BumrL3CarVLL7dd7lHM=
 cloud.google.com/go/monitoring v1.24.2/go.mod h1:x7yzPWcgDRnPEv3sI+jJGBkwl5qINf+6qY4eq0I9B4U=
 cloud.google.com/go/netapp v1.7.1 h1:3MxBolN91fsXtzIQRsp8UZfLF0zTrCUpl+DnYC7/qBU=
