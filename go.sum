@@ -63,6 +63,8 @@ cloud.google.com/go/dataplex v1.25.3 h1:Xr0Toh6wyBlmL3H4EPu1YKwxUtkDSzzq+IP0iLc8
 cloud.google.com/go/dataplex v1.25.3/go.mod h1:wOJXnOg6bem0tyslu4hZBTncfqcPNDpYGKzed3+bd+E=
 cloud.google.com/go/dataproc/v2 v2.11.2 h1:KhC8wdLILpAs17yeTG6Miwg1v0nOP/OXD+9QNg3w6AQ=
 cloud.google.com/go/dataproc/v2 v2.11.2/go.mod h1:xwukBjtfiO4vMEa1VdqyFLqJmcv7t3lo+PbLDcTEw+g=
+cloud.google.com/go/dataproc/v2 v2.15.0 h1:I/Yux/d8uaxf3W+d59kolGTOc52+VZaL6RzJw7oDOeg=
+cloud.google.com/go/dataproc/v2 v2.15.0/go.mod h1:tSdkodShfzrrUNPDVEL6MdH9/mIEvp/Z9s9PBdbsZg8=
 cloud.google.com/go/datastream v1.14.1 h1:j+y0lUKm9pbDjJn0YcWxPI/hXNGUQ80GE6yrFuJC/JA=
 cloud.google.com/go/datastream v1.14.1/go.mod h1:JqMKXq/e0OMkEgfYe0nP+lDye5G2IhIlmencWxmesMo=
 cloud.google.com/go/deploy v1.27.2 h1:C0VqBhFyQFp6+xgPHZAD7LeRA4XGy5YLzGmPQ2NhlLk=
