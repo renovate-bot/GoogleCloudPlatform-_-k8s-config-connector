@@ -75,6 +75,8 @@ cloud.google.com/go/edgecontainer v1.4.3 h1:9tfGCicvrki927T+hGMB0yYmwIbRuZY6JR1/
 cloud.google.com/go/edgecontainer v1.4.3/go.mod h1:q9Ojw2ox0uhAvFisnfPRAXFTB1nfRIOIXVWzdXMZLcE=
 cloud.google.com/go/essentialcontacts v1.7.6 h1:ysHZ4gr4plW1CL1Ur/AucUUfh20hDjSFbfjxSK0q/sk=
 cloud.google.com/go/essentialcontacts v1.7.6/go.mod h1:/Ycn2egr4+XfmAfxpLYsJeJlVf9MVnq9V7OMQr9R4lA=
+cloud.google.com/go/essentialcontacts v1.7.7 h1:v9sO4IHFuwplaOuDnEXZFtfOrjw2bi11TSIVp5PnAU4=
+cloud.google.com/go/essentialcontacts v1.7.7/go.mod h1:ytycWAEn/aKUMRKQPMVgMrAtphEMgjbzL8vFwM3tqXs=
 cloud.google.com/go/eventarc v1.15.5 h1:bZW7ZMM+XXNErg6rOZcgxUzAgz4vpReRDP3ZiGf7/sI=
 cloud.google.com/go/eventarc v1.15.5/go.mod h1:vDCqGqyY7SRiickhEGt1Zhuj81Ya4F/NtwwL3OZNskg=
 cloud.google.com/go/firestore v1.19.0 h1:E3FiRsWfZKwZ6W+Lsp1YqTzZ9H6jP+QsKW40KR21C8I=
