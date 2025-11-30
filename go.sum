@@ -147,6 +147,8 @@ cloud.google.com/go/trace v1.11.6 h1:2O2zjPzqPYAHrn3OKl029qlqG6W8ZdYaOWRyr8NgMT4
 cloud.google.com/go/trace v1.11.6/go.mod h1:GA855OeDEBiBMzcckLPE2kDunIpC72N+Pq8WFieFjnI=
 cloud.google.com/go/vmwareengine v1.3.5 h1:OsGd1SB91y9fDuzdzFngMv4UcT4cqmRxjsCsS4Xmcu8=
 cloud.google.com/go/vmwareengine v1.3.5/go.mod h1:QuVu2/b/eo8zcIkxBYY5QSwiyEcAy6dInI7N+keI+Jg=
+cloud.google.com/go/vmwareengine v1.3.6 h1:TKvULKbk44QrIx674cnoVjcZueXhyCAm2sNAJu/S1ds=
+cloud.google.com/go/vmwareengine v1.3.6/go.mod h1:ps0rb+Skgpt9ppHYC0o5DqtJ5ld2FyS8sAqtbHH8t9s=
 cloud.google.com/go/workflows v1.14.2 h1:phBz5TOAES0YGogxZ6Q7ISSudaf618lRhE3euzBpE9U=
 cloud.google.com/go/workflows v1.14.2/go.mod h1:5nqKjMD+MsJs41sJhdVrETgvD5cOK3hUcAs8ygqYvXQ=
 cloud.google.com/go/workstations v1.1.1 h1:wIA5Pk4Z9xwdmltGQoAVP4vr441MGhOu9sGv0Sk4lnI=
