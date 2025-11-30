@@ -32,7 +32,7 @@ require (
 	cloud.google.com/go/notebooks v1.12.6
 	cloud.google.com/go/orgpolicy v1.15.0
 	cloud.google.com/go/osconfig v1.14.6
-	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
+	cloud.google.com/go/recaptchaenterprise/v2 v2.20.5
 	cloud.google.com/go/storage v1.56.0
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
 	github.com/golang/protobuf v1.5.4
