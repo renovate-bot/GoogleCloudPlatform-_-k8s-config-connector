@@ -28,7 +28,7 @@ require (
 	cloud.google.com/go/compute v1.41.0
 	cloud.google.com/go/configdelivery v0.1.1
 	cloud.google.com/go/datacatalog v1.26.0
-	cloud.google.com/go/dataflow v0.11.0
+	cloud.google.com/go/dataflow v0.11.1
 	cloud.google.com/go/dataform v0.12.0
 	cloud.google.com/go/dataplex v1.26.0
 	cloud.google.com/go/dataproc/v2 v2.14.0
