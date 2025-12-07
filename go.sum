@@ -127,6 +127,8 @@ cloud.google.com/go/pubsub/v2 v2.0.0 h1:0qS6mRJ41gD1lNmM/vdm6bR7DQu6coQcVwD+VPf0
 cloud.google.com/go/pubsub/v2 v2.0.0/go.mod h1:0aztFxNzVQIRSZ8vUr79uH2bS3jwLebwK6q1sgEub+E=
 cloud.google.com/go/recaptchaenterprise/v2 v2.20.4 h1:P4QMryKcWdi4LIe1Sx0b2ZOAQv5gVfdzPt2peXcN32Y=
 cloud.google.com/go/recaptchaenterprise/v2 v2.20.4/go.mod h1:3H8nb8j8N7Ss2eJ+zr+/H7gyorfzcxiDEtVBDvDjwDQ=
+cloud.google.com/go/recaptchaenterprise/v2 v2.20.5 h1:Q2CcYGxcvnvng2q3o1SaOpV+rjE/AbFVYGTJomxlG4g=
+cloud.google.com/go/recaptchaenterprise/v2 v2.20.5/go.mod h1:TCHn8+vtwgygBOwwbUJgRi6R9qglIpTeImsWsWDr5Lo=
 cloud.google.com/go/redis v1.18.2 h1:JlHLceAOILEmbn+NIS7l+vmUKkFuobLToCWTxL7NGcQ=
 cloud.google.com/go/redis v1.18.2/go.mod h1:q6mPRhLiR2uLf584Lcl4tsiRn0xiFlu6fnJLwCORMtY=
 cloud.google.com/go/resourcemanager v1.10.6 h1:LIa8kKE8HF71zm976oHMqpWFiaDHVw/H1YMO71lrGmo=
