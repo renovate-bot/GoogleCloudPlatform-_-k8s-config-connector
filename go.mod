@@ -110,7 +110,7 @@ require (
 	github.com/zclconf/go-cty v1.16.4
 	go.opencensus.io v0.24.0
 	go.uber.org/mock v0.5.2
-	go.uber.org/zap v1.27.0
+	go.uber.org/zap v1.27.1
 	golang.org/x/oauth2 v0.33.0
 	golang.org/x/sync v0.18.0
 	golang.org/x/time v0.14.0
