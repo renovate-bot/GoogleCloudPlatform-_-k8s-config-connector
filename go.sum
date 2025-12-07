@@ -153,6 +153,8 @@ cloud.google.com/go/workflows v1.14.2 h1:phBz5TOAES0YGogxZ6Q7ISSudaf618lRhE3euzB
 cloud.google.com/go/workflows v1.14.2/go.mod h1:5nqKjMD+MsJs41sJhdVrETgvD5cOK3hUcAs8ygqYvXQ=
 cloud.google.com/go/workstations v1.1.1 h1:wIA5Pk4Z9xwdmltGQoAVP4vr441MGhOu9sGv0Sk4lnI=
 cloud.google.com/go/workstations v1.1.1/go.mod h1:ajqvxTXbkzcvuzSMDUyasKCgEl6ZioN5HBEkzkBb0i0=
+cloud.google.com/go/workstations v1.1.6 h1:ANlNPquQ20uCZqZQ8qIDRYKqox+dXKmaPQzkwDnOAGI=
+cloud.google.com/go/workstations v1.1.6/go.mod h1:uzQaKVdXAmyqCjLQC5kXWyueL4Az0MYWRpKeWrAaRy0=
 contrib.go.opencensus.io/exporter/prometheus v0.1.0 h1:SByaIoWwNgMdPSgl5sMqM2KDE5H/ukPWBRo314xiDvg=
 contrib.go.opencensus.io/exporter/prometheus v0.1.0/go.mod h1:cGFniUXGZlKRjzOyuZJ6mgB+PgBcCIa79kEKR8YCW+A=
 dario.cat/mergo v1.0.0 h1:AGCNq9Evsj31mOgNPcLyXc+4PNABt905YmuqPYYpBWk=
