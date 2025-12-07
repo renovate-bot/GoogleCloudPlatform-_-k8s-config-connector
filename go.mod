@@ -32,7 +32,7 @@ require (
 	cloud.google.com/go/dataform v0.12.0
 	cloud.google.com/go/dataplex v1.26.0
 	cloud.google.com/go/dataproc/v2 v2.14.0
-	cloud.google.com/go/datastream v1.14.1
+	cloud.google.com/go/datastream v1.15.1
 	cloud.google.com/go/deploy v1.27.2
 	cloud.google.com/go/discoveryengine v1.15.0
 	cloud.google.com/go/documentai v1.38.1
