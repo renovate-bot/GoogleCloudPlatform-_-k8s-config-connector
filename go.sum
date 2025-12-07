@@ -113,6 +113,8 @@ cloud.google.com/go/networkservices v0.5.0 h1:/yQrBP9Tb69M5V6/1j7yr+p/ByLLYmTkeD
 cloud.google.com/go/networkservices v0.5.0/go.mod h1:zzpgL0vdTTZQqFFR4hBOqXoc74TzQy6Ivg2NUcHd1Co=
 cloud.google.com/go/notebooks v1.12.6 h1:nCfZwVihArMPP2atRoxRrXOXJ/aC9rAgpBQGCc2zpYw=
 cloud.google.com/go/notebooks v1.12.6/go.mod h1:3Z4TMEqAKP3pu6DI/U+aEXrNJw9hGZIVbp+l3zw8EuA=
+cloud.google.com/go/notebooks v1.12.7 h1:g5LTI1LHa/86abDTWd8nrq7/4qq8oFhVx1SmnNpZLVg=
+cloud.google.com/go/notebooks v1.12.7/go.mod h1:uR9pxAkKmlNloibMr9Q1t8WhIu4P2JeqJs7c064/0Mo=
 cloud.google.com/go/orchestration v1.11.9 h1:PnlZ/O4R/eiounpxUkhI9ZXRMWbG7vFqxc6L6sR+31k=
 cloud.google.com/go/orchestration v1.11.9/go.mod h1:KKXK67ROQaPt7AxUS1V/iK0Gs8yabn3bzJ1cLHw4XBg=
 cloud.google.com/go/orgpolicy v1.15.0 h1:uQziDu3UKYk9ZwUgneZAW5aWxZFKgOXXsuVKFKh0z7Y=
