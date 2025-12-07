@@ -70,7 +70,7 @@ require (
 	cloud.google.com/go/spanner v1.83.0
 	cloud.google.com/go/speech v1.28.0
 	cloud.google.com/go/storage v1.56.0
-	cloud.google.com/go/vmwareengine v1.3.5
+	cloud.google.com/go/vmwareengine v1.3.6
 	cloud.google.com/go/workflows v1.14.2
 	cloud.google.com/go/workstations v1.1.1
 	contrib.go.opencensus.io/exporter/prometheus v0.1.0
