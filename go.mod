@@ -65,7 +65,7 @@ require (
 	cloud.google.com/go/resourcemanager v1.10.6
 	cloud.google.com/go/run v1.11.0
 	cloud.google.com/go/secretmanager v1.15.0
-	cloud.google.com/go/securesourcemanager v1.1.1
+	cloud.google.com/go/securesourcemanager v1.4.1
 	cloud.google.com/go/security v1.19.0
 	cloud.google.com/go/spanner v1.83.0
 	cloud.google.com/go/speech v1.28.0
