@@ -55,7 +55,7 @@ require (
 	cloud.google.com/go/networksecurity v0.10.6
 	cloud.google.com/go/networkservices v0.5.0
 	cloud.google.com/go/notebooks v1.12.6
-	cloud.google.com/go/orchestration v1.11.9
+	cloud.google.com/go/orchestration v1.11.10
 	cloud.google.com/go/orgpolicy v1.15.0
 	cloud.google.com/go/privilegedaccessmanager v0.2.5
 	cloud.google.com/go/profiler v0.4.1
