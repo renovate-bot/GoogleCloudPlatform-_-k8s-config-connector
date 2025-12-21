@@ -85,6 +85,8 @@ cloud.google.com/go/gkebackup v1.8.0 h1:eBqOt61yEChvj7I/GDPBbdCCRdUPudD1qrQYfYWV
 cloud.google.com/go/gkebackup v1.8.0/go.mod h1:FjsjNldDilC9MWKEHExnK3kKJyTDaSdO1vF0QeWSOPU=
 cloud.google.com/go/gkemulticloud v1.5.3 h1:334aZmOzIt3LVBpguCof8IHaLaftcZlx+L0TGBukYkY=
 cloud.google.com/go/gkemulticloud v1.5.3/go.mod h1:KPFf+/RcfvmuScqwS9/2MF5exZAmXSuoSLPuaQ98Xlk=
+cloud.google.com/go/gkemulticloud v1.6.0 h1:m0FX9o7t7xVmSZhqzm/m8nEZn8LnC5Kh60Wg4Yx1lyQ=
+cloud.google.com/go/gkemulticloud v1.6.0/go.mod h1:bGpd4o/Z5Z/XFlaojkgdVisHRwb+fLJvUPzsmV0I9ok=
 cloud.google.com/go/iam v1.5.3 h1:+vMINPiDF2ognBJ97ABAYYwRgsaqxPbQDlMnbHMjolc=
 cloud.google.com/go/iam v1.5.3/go.mod h1:MR3v9oLkZCTlaqljW6Eb2d3HGDGK5/bDv93jhfISFvU=
 cloud.google.com/go/iap v1.11.2 h1:VIioCrYsyWiRGx7Y8RDNylpI6d4t1Qx5ZgSLUVmWWPo=
