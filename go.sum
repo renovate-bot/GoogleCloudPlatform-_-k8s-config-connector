@@ -107,6 +107,8 @@ cloud.google.com/go/netapp v1.7.1 h1:3MxBolN91fsXtzIQRsp8UZfLF0zTrCUpl+DnYC7/qBU
 cloud.google.com/go/netapp v1.7.1/go.mod h1:8l21nS/sQ+7wtFYR6hNcJWk5ksc8gNJ2o4/dVkeg3Vg=
 cloud.google.com/go/networkmanagement v1.19.1 h1:ecukgArkYCVcK5w2h7WDDd+nHgmBAp9Bst7ClmVKz5A=
 cloud.google.com/go/networkmanagement v1.19.1/go.mod h1:icgk265dNnilxQzpr6rO9WuAuuCmUOqq9H6WBeM2Af4=
+cloud.google.com/go/networkmanagement v1.21.0 h1:041d0RqmwP/H7AWkF/AoAwFvuCkz8shUMA4EoQt0lOA=
+cloud.google.com/go/networkmanagement v1.21.0/go.mod h1:clG/5Yt0wQ57qSH6Yh7oehQYlobHw3F6nb3Pn4ig5hU=
 cloud.google.com/go/networksecurity v0.11.0 h1:+ahtCqEqwHw3a3UIeG21vT817xt9kkDDAO6k9+LCc18=
 cloud.google.com/go/networksecurity v0.11.0/go.mod h1:JLgDsg4tOyJ3eMO8lypjqMftbfd60SJ+P7T+DUmWBsM=
 cloud.google.com/go/networkservices v0.5.0 h1:/yQrBP9Tb69M5V6/1j7yr+p/ByLLYmTkeDvh713lpSA=
