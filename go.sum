@@ -79,6 +79,8 @@ cloud.google.com/go/essentialcontacts v1.7.6 h1:ysHZ4gr4plW1CL1Ur/AucUUfh20hDjSF
 cloud.google.com/go/essentialcontacts v1.7.6/go.mod h1:/Ycn2egr4+XfmAfxpLYsJeJlVf9MVnq9V7OMQr9R4lA=
 cloud.google.com/go/eventarc v1.15.5 h1:bZW7ZMM+XXNErg6rOZcgxUzAgz4vpReRDP3ZiGf7/sI=
 cloud.google.com/go/eventarc v1.15.5/go.mod h1:vDCqGqyY7SRiickhEGt1Zhuj81Ya4F/NtwwL3OZNskg=
+cloud.google.com/go/eventarc v1.18.0 h1:8WWG1/ogInYur1NQjML6EMHQ0ZBzAdMDGlUVpLD56cI=
+cloud.google.com/go/eventarc v1.18.0/go.mod h1:/6SDoqh5+9QNUqCX4/oQcJVK16fG/snHBSXu7lrJtO8=
 cloud.google.com/go/firestore v1.19.0 h1:E3FiRsWfZKwZ6W+Lsp1YqTzZ9H6jP+QsKW40KR21C8I=
 cloud.google.com/go/firestore v1.19.0/go.mod h1:jqu4yKdBmDN5srneWzx3HlKrHFWFdlkgjgQ6BKIOFQo=
 cloud.google.com/go/gkebackup v1.8.0 h1:eBqOt61yEChvj7I/GDPBbdCCRdUPudD1qrQYfYWV3Ok=
@@ -1064,6 +1066,8 @@ google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-557
 google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237/go.mod h1:qHyHwIge/12k5kr63VRq/UMolD/sVcMjAGL41LlV8JU=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20251103181224-f26f9409b101 h1:tRPGkdGHuewF4UisLzzHHr1spKw92qLM98nIzxbC0wY=
 google.golang.org/genproto/googleapis/rpc v0.0.0-20251103181224-f26f9409b101/go.mod h1:7i2o+ce6H/6BluujYR+kqX3GKH+dChPTQU19wjRPiGk=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba h1:UKgtfRM7Yh93Sya0Fo8ZzhDP4qBckrrxEr2oF5UIVb8=
+google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba/go.mod h1:7i2o+ce6H/6BluujYR+kqX3GKH+dChPTQU19wjRPiGk=
 google.golang.org/grpc v1.19.0/go.mod h1:mqu4LbDTu4XGKhr4mRzUsmM4RtVoemTSY81AxZiDr8c=
 google.golang.org/grpc v1.23.0/go.mod h1:Y5yQAOtifL1yxbo5wqy6BxZv8vAUGQwXBOALyacEbxg=
 google.golang.org/grpc v1.25.1/go.mod h1:c3i+UQWmh7LiEpx4sFZnkU36qjEYZ0imhYfXVyQciAY=

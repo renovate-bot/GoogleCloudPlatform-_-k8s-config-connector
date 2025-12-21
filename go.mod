@@ -38,7 +38,7 @@ require (
 	cloud.google.com/go/documentai v1.38.1
 	cloud.google.com/go/edgecontainer v1.4.3
 	cloud.google.com/go/essentialcontacts v1.7.6
-	cloud.google.com/go/eventarc v1.15.5
+	cloud.google.com/go/eventarc v1.18.0
 	cloud.google.com/go/firestore v1.19.0
 	cloud.google.com/go/gkebackup v1.8.0
 	cloud.google.com/go/gkemulticloud v1.5.3
@@ -118,7 +118,7 @@ require (
 	google.golang.org/genproto v0.0.0-20250728155136-f173205681a0
 	google.golang.org/genproto/googleapis/api v0.0.0-20251111163417-95abcf5c77ba
 	google.golang.org/genproto/googleapis/api/serviceusage v0.0.0-20250519155744-55703ea1f237
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251103181224-f26f9409b101
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba
 	google.golang.org/grpc v1.76.0
 	google.golang.org/protobuf v1.36.10
 	gopkg.in/dnaeon/go-vcr.v3 v3.2.0
