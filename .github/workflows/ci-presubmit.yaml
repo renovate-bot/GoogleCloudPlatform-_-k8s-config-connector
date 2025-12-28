@@ -48,7 +48,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-capture-pprof
           path: /tmp/artifacts/
@@ -68,7 +68,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-fuzz-roundtrippers
           path: /tmp/artifacts/
@@ -92,7 +92,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-test-mockgcp
           path: /tmp/artifacts/
@@ -112,7 +112,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-test-pause
           path: /tmp/artifacts/
@@ -132,7 +132,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-direct-iam
           path: /tmp/artifacts/
@@ -152,7 +152,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures
           path: /tmp/artifacts/
@@ -172,7 +172,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-accesscontextmanager
           path: /tmp/artifacts/
@@ -192,7 +192,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-alloydb
           path: /tmp/artifacts/
@@ -212,7 +212,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-apigateway
           path: /tmp/artifacts/
@@ -232,7 +232,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-apigee
           path: /tmp/artifacts/
@@ -252,7 +252,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-apikeys
           path: /tmp/artifacts/
@@ -272,7 +272,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-artifactregistry
           path: /tmp/artifacts/
@@ -292,7 +292,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-asset
           path: /tmp/artifacts/
@@ -312,7 +312,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-backupdr
           path: /tmp/artifacts/
@@ -332,7 +332,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-batch
           path: /tmp/artifacts/
@@ -352,7 +352,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-bigquery
           path: /tmp/artifacts/
@@ -372,7 +372,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-bigquerybiglake
           path: /tmp/artifacts/
@@ -392,7 +392,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-bigquerydatapolicy
           path: /tmp/artifacts/
@@ -412,7 +412,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-bigtable
           path: /tmp/artifacts/
@@ -432,7 +432,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-certificatemanager
           path: /tmp/artifacts/
@@ -452,7 +452,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-cloudbuild
           path: /tmp/artifacts/
@@ -472,7 +472,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-clouddeploy
           path: /tmp/artifacts/
@@ -492,7 +492,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-clouddms
           path: /tmp/artifacts/
@@ -512,7 +512,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-cloudidentity
           path: /tmp/artifacts/
@@ -532,7 +532,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-cloudquota
           path: /tmp/artifacts/
@@ -552,7 +552,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-cloudtasks
           path: /tmp/artifacts/
@@ -572,7 +572,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-colab
           path: /tmp/artifacts/
@@ -592,7 +592,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-composer
           path: /tmp/artifacts/
@@ -612,7 +612,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-compute
           path: /tmp/artifacts/
@@ -632,7 +632,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-container
           path: /tmp/artifacts/
@@ -652,7 +652,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-containerattached
           path: /tmp/artifacts/
@@ -672,7 +672,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-datacatalog
           path: /tmp/artifacts/
@@ -692,7 +692,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-dataflow
           path: /tmp/artifacts/
@@ -712,7 +712,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-dataform
           path: /tmp/artifacts/
@@ -732,7 +732,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-dataplex
           path: /tmp/artifacts/
@@ -752,7 +752,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-dataproc
           path: /tmp/artifacts/
@@ -772,7 +772,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-datastream
           path: /tmp/artifacts/
@@ -792,7 +792,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-discoveryengine
           path: /tmp/artifacts/
@@ -812,7 +812,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-documentai
           path: /tmp/artifacts/
@@ -832,7 +832,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-edgecontainer
           path: /tmp/artifacts/
@@ -852,7 +852,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-essentialcontacts
           path: /tmp/artifacts/
@@ -872,7 +872,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-eventarc
           path: /tmp/artifacts/
@@ -892,7 +892,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-firestore
           path: /tmp/artifacts/
@@ -912,7 +912,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-gkebackup
           path: /tmp/artifacts/
@@ -932,7 +932,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-gkehub
           path: /tmp/artifacts/
@@ -952,7 +952,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-iam
           path: /tmp/artifacts/
@@ -972,7 +972,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-iap
           path: /tmp/artifacts/
@@ -992,7 +992,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-kms
           path: /tmp/artifacts/
@@ -1012,7 +1012,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-logging
           path: /tmp/artifacts/
@@ -1032,7 +1032,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-managedkafka
           path: /tmp/artifacts/
@@ -1052,7 +1052,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-memorystore
           path: /tmp/artifacts/
@@ -1072,7 +1072,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-metastore
           path: /tmp/artifacts/
@@ -1092,7 +1092,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-monitoring
           path: /tmp/artifacts/
@@ -1112,7 +1112,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-netapp
           path: /tmp/artifacts/
@@ -1132,7 +1132,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-networkconnectivity
           path: /tmp/artifacts/
@@ -1152,7 +1152,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-networkmanagement
           path: /tmp/artifacts/
@@ -1172,7 +1172,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-networksecurity
           path: /tmp/artifacts/
@@ -1192,7 +1192,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-networkservices
           path: /tmp/artifacts/
@@ -1212,7 +1212,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-notebooks
           path: /tmp/artifacts/
@@ -1232,7 +1232,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-orgpolicy
           path: /tmp/artifacts/
@@ -1252,7 +1252,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-privilegedaccessmanager
           path: /tmp/artifacts/
@@ -1272,7 +1272,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-pubsub
           path: /tmp/artifacts/
@@ -1292,7 +1292,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-recaptchaenterprise
           path: /tmp/artifacts/
@@ -1312,7 +1312,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-redis
           path: /tmp/artifacts/
@@ -1332,7 +1332,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-resourcemanager
           path: /tmp/artifacts/
@@ -1352,7 +1352,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-run
           path: /tmp/artifacts/
@@ -1372,7 +1372,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-secretmanager
           path: /tmp/artifacts/
@@ -1392,7 +1392,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-securesourcemanager
           path: /tmp/artifacts/
@@ -1412,7 +1412,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-spanner
           path: /tmp/artifacts/
@@ -1432,7 +1432,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-sql
           path: /tmp/artifacts/
@@ -1452,7 +1452,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-storage
           path: /tmp/artifacts/
@@ -1472,7 +1472,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-tags
           path: /tmp/artifacts/
@@ -1492,7 +1492,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-vertexai
           path: /tmp/artifacts/
@@ -1512,7 +1512,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-vmwareengine
           path: /tmp/artifacts/
@@ -1532,7 +1532,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-fixtures-workstations
           path: /tmp/artifacts/
@@ -1552,7 +1552,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-alloydb
           path: /tmp/artifacts/
@@ -1572,7 +1572,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-apigateway
           path: /tmp/artifacts/
@@ -1592,7 +1592,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-apigee
           path: /tmp/artifacts/
@@ -1612,7 +1612,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-bigquery
           path: /tmp/artifacts/
@@ -1632,7 +1632,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-bigqueryconnection
           path: /tmp/artifacts/
@@ -1652,7 +1652,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-bigquerydatapolicy
           path: /tmp/artifacts/
@@ -1672,7 +1672,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-bigquerydatatransfer
           path: /tmp/artifacts/
@@ -1692,7 +1692,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-cloudbuild
           path: /tmp/artifacts/
@@ -1712,7 +1712,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-cloudidentity
           path: /tmp/artifacts/
@@ -1732,7 +1732,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-compute
           path: /tmp/artifacts/
@@ -1752,7 +1752,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-dataflow
           path: /tmp/artifacts/
@@ -1772,7 +1772,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-dataproc
           path: /tmp/artifacts/
@@ -1792,7 +1792,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-gkehub
           path: /tmp/artifacts/
@@ -1812,7 +1812,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-iam
           path: /tmp/artifacts/
@@ -1832,7 +1832,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-kms
           path: /tmp/artifacts/
@@ -1852,7 +1852,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-orgpolicy
           path: /tmp/artifacts/
@@ -1872,7 +1872,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-redis
           path: /tmp/artifacts/
@@ -1892,7 +1892,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-secretmanager
           path: /tmp/artifacts/
@@ -1912,7 +1912,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-spanner
           path: /tmp/artifacts/
@@ -1932,7 +1932,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-sql
           path: /tmp/artifacts/
@@ -1952,7 +1952,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-storage
           path: /tmp/artifacts/
@@ -1972,7 +1972,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-unclassified
           path: /tmp/artifacts/
@@ -1992,7 +1992,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-e2e-samples-workstations
           path: /tmp/artifacts/
@@ -2012,7 +2012,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-gcptracker
           path: /tmp/artifacts/
@@ -2032,7 +2032,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-scenarios-acquisition
           path: /tmp/artifacts/
@@ -2052,7 +2052,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-scenarios-gkehubfeaturemembership
           path: /tmp/artifacts/
@@ -2072,7 +2072,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-scenarios-powertool
           path: /tmp/artifacts/
@@ -2092,7 +2092,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-tests-scenarios-unclassified
           path: /tmp/artifacts/
@@ -2112,7 +2112,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-validate-generated-files
           path: /tmp/artifacts/
@@ -2132,7 +2132,7 @@ jobs:
         env:
           ARTIFACTS: /tmp/artifacts
       - name: "Upload artifacts"
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: artifacts-validate-generated-types
           path: /tmp/artifacts/
