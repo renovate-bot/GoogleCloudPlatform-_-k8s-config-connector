@@ -32,7 +32,7 @@ require (
 	cloud.google.com/go/notebooks v1.12.6
 	cloud.google.com/go/orgpolicy v1.15.0
 	cloud.google.com/go/osconfig v1.14.6
-	cloud.google.com/go/recaptchaenterprise/v2 v2.20.4
+	cloud.google.com/go/recaptchaenterprise/v2 v2.21.0
 	cloud.google.com/go/storage v1.56.0
 	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
 	github.com/golang/protobuf v1.5.4
@@ -42,7 +42,7 @@ require (
 	google.golang.org/api v0.256.0
 	google.golang.org/genproto v0.0.0-20250728155136-f173205681a0
 	google.golang.org/genproto/googleapis/api v0.0.0-20251111163417-95abcf5c77ba
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251103181224-f26f9409b101
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251111163417-95abcf5c77ba
 	google.golang.org/grpc v1.76.0
 	google.golang.org/protobuf v1.36.10
 	k8s.io/api v0.33.0
