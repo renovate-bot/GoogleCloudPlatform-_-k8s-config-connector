@@ -117,6 +117,8 @@ cloud.google.com/go/orchestration v1.11.9 h1:PnlZ/O4R/eiounpxUkhI9ZXRMWbG7vFqxc6
 cloud.google.com/go/orchestration v1.11.9/go.mod h1:KKXK67ROQaPt7AxUS1V/iK0Gs8yabn3bzJ1cLHw4XBg=
 cloud.google.com/go/orgpolicy v1.15.0 h1:uQziDu3UKYk9ZwUgneZAW5aWxZFKgOXXsuVKFKh0z7Y=
 cloud.google.com/go/orgpolicy v1.15.0/go.mod h1:NTQLwgS8N5cJtdfK55tAnMGtvPSsy95JJhESwYHaJVs=
+cloud.google.com/go/orgpolicy v1.15.1 h1:0hq12wxNwcfUMojr5j3EjWECSInIuyYDhkAWXTomRhc=
+cloud.google.com/go/orgpolicy v1.15.1/go.mod h1:bpvi9YIyU7wCW9WiXL/ZKT7pd2Ovegyr2xENIeRX5q0=
 cloud.google.com/go/osconfig v1.14.6 h1:4uJrA1obzMBp1I+DF15y/MvsXKIODevuANpq3QhvX30=
 cloud.google.com/go/osconfig v1.14.6/go.mod h1:LS39HDBH0IJDFgOUkhSZUHFQzmcWaCpYXLrc3A4CVzI=
 cloud.google.com/go/privilegedaccessmanager v0.2.5 h1:8M1ZJLUuZvh1tgsYoX9W9uR8qR3vDR8e4WeH+GK7aDA=
