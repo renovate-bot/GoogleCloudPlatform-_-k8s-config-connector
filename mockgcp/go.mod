@@ -38,7 +38,7 @@ require (
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
-	golang.org/x/oauth2 v0.33.0
+	golang.org/x/oauth2 v0.34.0
 	google.golang.org/api v0.256.0
 	google.golang.org/genproto v0.0.0-20250728155136-f173205681a0
 	google.golang.org/genproto/googleapis/api v0.0.0-20251111163417-95abcf5c77ba
