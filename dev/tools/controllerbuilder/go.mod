@@ -1,8 +1,6 @@
 module github.com/GoogleCloudPlatform/k8s-config-connector/dev/tools/controllerbuilder
 
-go 1.24.0
-
-toolchain go1.24.6
+go 1.25.0
 
 require (
 	github.com/GoogleCloudPlatform/kubectl-ai/gollm v0.0.0-20250423144723-a651944aad2d
@@ -12,16 +10,16 @@ require (
 	github.com/google/go-cmp v0.7.0
 	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57
 	github.com/spf13/cobra v1.8.1
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/pflag v1.0.9
 	golang.org/x/tools v0.39.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20250505200425-f936aa4a68b2
-	google.golang.org/protobuf v1.36.6
+	google.golang.org/protobuf v1.36.8
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
-	k8s.io/apimachinery v0.32.1
+	k8s.io/apimachinery v0.35.0
 	k8s.io/klog v1.0.0
 	k8s.io/klog/v2 v2.130.1
-	sigs.k8s.io/yaml v1.4.0
+	sigs.k8s.io/yaml v1.6.0
 )
 
 require (
@@ -43,7 +41,7 @@ require (
 	github.com/gdamore/encoding v1.0.0 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.6.2 // indirect
-	github.com/go-logr/logr v1.4.2 // indirect
+	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.2 // indirect
@@ -62,7 +60,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/ollama/ollama v0.5.13 // indirect
-	github.com/onsi/gomega v1.36.1 // indirect
+	github.com/onsi/gomega v1.38.2 // indirect
 	github.com/pjbgf/sha1cd v0.3.2 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
@@ -74,6 +72,7 @@ require (
 	go.opentelemetry.io/otel v1.35.0 // indirect
 	go.opentelemetry.io/otel/metric v1.35.0 // indirect
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
+	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/mod v0.30.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
