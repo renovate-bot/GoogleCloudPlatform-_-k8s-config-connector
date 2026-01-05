@@ -11,8 +11,8 @@ require (
 	github.com/go-git/go-git/v5 v5.13.2
 	github.com/google/go-cmp v0.7.0
 	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57
-	github.com/spf13/cobra v1.8.1
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/cobra v1.10.2
+	github.com/spf13/pflag v1.0.9
 	golang.org/x/tools v0.39.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20251111163417-95abcf5c77ba
 	google.golang.org/protobuf v1.36.11
