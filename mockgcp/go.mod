@@ -27,6 +27,8 @@ require (
 	cloud.google.com/go/iap v1.11.3
 	cloud.google.com/go/logging v1.13.1
 	cloud.google.com/go/longrunning v0.7.0
+	cloud.google.com/go/managedkafka v0.8.1
+	cloud.google.com/go/netapp v1.11.0
 	cloud.google.com/go/networksecurity v0.11.0
 	cloud.google.com/go/networkservices v0.6.0
 	cloud.google.com/go/notebooks v1.12.7
@@ -43,7 +45,7 @@ require (
 	google.golang.org/genproto v0.0.0-20250922171735-9219d122eba9
 	google.golang.org/genproto/googleapis/api v0.0.0-20251111163417-95abcf5c77ba
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251213004720-97cd9d5aeac2
-	google.golang.org/grpc v1.77.0
+	google.golang.org/grpc v1.78.0
 	google.golang.org/protobuf v1.36.11
 	k8s.io/api v0.33.0
 	k8s.io/apimachinery v0.33.0
