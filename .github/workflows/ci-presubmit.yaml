@@ -99,7 +99,7 @@ jobs:
       - uses: actions/setup-go@4dc6199c7b1a012772edbd06daecab0f50c9053c # v6.1.0
         with:
           go-version-file: 'go.mod'
-      - uses: 'google-github-actions/setup-gcloud@v2'
+      - uses: 'google-github-actions/setup-gcloud@v3'
         with:
           version: '546.0.0'
           install_components: 'alpha,beta'
@@ -2320,7 +2320,7 @@ jobs:
       - uses: actions/setup-go@4dc6199c7b1a012772edbd06daecab0f50c9053c # v6.1.0
         with:
           go-version-file: 'go.mod'
-      - uses: 'google-github-actions/setup-gcloud@v2'
+      - uses: 'google-github-actions/setup-gcloud@v3'
         with:
           version: '546.0.0'
           install_components: 'alpha,beta'
