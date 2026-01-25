@@ -51,7 +51,7 @@ jobs:
 
 
   tests-e2e-fixtures-vcr:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -63,7 +63,7 @@ jobs:
           ./scripts/github-actions/tests-e2e-fixtures-vcr.sh
 
   build-images:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
