@@ -5,7 +5,7 @@ http_archive(
     sha256 = "e5de048e72612598c45f564202f6a3c74616be4ffd2dbd6f7bc75045f8ecbdce",
     urls = [
         "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.23.4/rules_go-v0.23.4.tar.gz",
-        "https://github.com/bazelbuild/rules_go/releases/download/v0.23.4/rules_go-v0.23.4.tar.gz",
+        "https://github.com/bazelbuild/rules_go/releases/download/v0.60.0/rules_go-v0.23.4.tar.gz",
     ],
 )
 
@@ -122,10 +122,10 @@ http_archive(
 # TODO(ndietz): move this back to the Go section if gRPC is updated per https://github.com/grpc/grpc/issues/22172
 http_archive(
     name = "io_bazel_rules_go",
-    sha256 = "4707e6ba7c01fcfc4f0d340d123bc16e43c2b8ea3f307663d95712b36d2a0e88",
-    strip_prefix = "rules_go-0.23.0",
+    sha256 = "0b45a7056db1e38c16517d39baa8a1586be0895943d5b4774f82961457da04cf",
+    strip_prefix = "rules_go-0.60.0",
     urls = [
-        "https://github.com/bazelbuild/rules_go/archive/v0.23.0.zip",
+        "https://github.com/bazelbuild/rules_go/archive/v0.60.0.zip",
     ],
 )
 
