@@ -18,5 +18,42 @@
 // krm.version: v1alpha1
 // proto.service: google.cloud.networkservices.v1
 // resource: NetworkServicesServiceBinding:ServiceBinding
+// resource: NetworkServicesLBRouteExtension:LbRouteExtension
 
 package v1alpha1
+
+// +kcc:proto=google.cloud.networkservices.v1.ExtensionChain
+type ExtensionChain struct {
+	// Required. The name for this extension chain.
+	//  The name is logged as part of the HTTP request logs.
+	//  The name must conform with RFC-1034, is restricted to lower-cased letters,
+	//  numbers and hyphens, and can have a maximum length of 63 characters.
+	//  Additionally, the first character must be a letter and the last a letter or
+	//  a number.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.name
+	Name *string `json:"name,omitempty"`
+
+	// Required. Conditions under which this chain is invoked for a request.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.match_condition
+	MatchCondition *ExtensionChain_MatchCondition `json:"matchCondition,omitempty"`
+
+	// Required. A set of extensions to execute for the matching request.
+	//  At least one extension is required.
+	//  Up to 3 extensions can be defined for each extension chain
+	//  for `LbTrafficExtension` resource.
+	//  `LbRouteExtension` and `LbEdgeExtension` chains are limited to 1 extension
+	//  per extension chain.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.extensions
+	Extensions []ExtensionChain_Extension `json:"extensions,omitempty"`
+}
+
+// +kcc:proto=google.cloud.networkservices.v1.ExtensionChain.MatchCondition
+type ExtensionChain_MatchCondition struct {
+	// Required. A Common Expression Language (CEL) expression that is used to
+	//  match requests for which the extension chain is executed.
+	//
+	//  For more information, see [CEL matcher language
+	//  reference](https://cloud.google.com/service-extensions/docs/cel-matcher-language-reference).
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.MatchCondition.cel_expression
+	CelExpression *string `json:"celExpression,omitempty"`
+}
