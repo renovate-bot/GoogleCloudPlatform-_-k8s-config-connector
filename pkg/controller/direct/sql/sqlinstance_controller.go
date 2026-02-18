@@ -910,7 +910,9 @@ func (a *sqlInstanceAdapter) toProto(ctx context.Context, instance *api.Database
 	}
 	delete(m, "satisfiesPzi")
 	if settings, ok := m["settings"].(map[string]any); ok {
-		delete(settings, "backupTier")
+		if bc, ok := settings["backupConfiguration"].(map[string]any); ok {
+			delete(bc, "backupTier")
+		}
 	}
 	j, err = json.Marshal(m)
 	if err != nil {
@@ -919,9 +921,10 @@ func (a *sqlInstanceAdapter) toProto(ctx context.Context, instance *api.Database
 
 	out := &pb.DatabaseInstance{}
 	unmarshalOptions := protojson.UnmarshalOptions{
-		// We use DiscardUnknown to be robust against new fields being added to the GCP API.
-		// We also explicitly delete some fields above to be extra clean and avoid relying
-		// solely on DiscardUnknown for known problematic fields.
+		// We use DiscardUnknown because the GCP API often has more fields than our proto.
+		// For example, satisfiesPzi and backupTier are not in the proto but are in the API.
+		// We explicitly delete some known fields above, but DiscardUnknown is more robust
+		// against new fields being added to the GCP API.
 		DiscardUnknown: true,
 	}
 	if err := unmarshalOptions.Unmarshal(j, out); err != nil {
