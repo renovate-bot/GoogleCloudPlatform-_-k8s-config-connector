@@ -919,6 +919,9 @@ func (a *sqlInstanceAdapter) toProto(ctx context.Context, instance *api.Database
 
 	out := &pb.DatabaseInstance{}
 	unmarshalOptions := protojson.UnmarshalOptions{
+		// We use DiscardUnknown to be robust against new fields being added to the GCP API.
+		// We also explicitly delete some fields above to be extra clean and avoid relying
+		// solely on DiscardUnknown for known problematic fields.
 		DiscardUnknown: true,
 	}
 	if err := unmarshalOptions.Unmarshal(j, out); err != nil {
