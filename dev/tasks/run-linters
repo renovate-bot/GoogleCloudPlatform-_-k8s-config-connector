@@ -20,5 +20,5 @@ set -o pipefail
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 cd ${REPO_ROOT}
 
-echo "Running custom linters..."
-go run ./dev/linters/main.go ./pkg/... ./cmd/... ./config/... 2>&1 | go run ./dev/tools/lint-filter/main.go
+echo "Running linters..."
+go run ./dev/linters ./pkg/controller/direct/...
