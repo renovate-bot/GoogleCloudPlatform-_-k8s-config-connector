@@ -10,7 +10,7 @@
 
 ## New Beta Resources (Direct Reconciler):
 
-*   Manage [Memorystore for Valkey Instances](https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances)
+* MemorystoreInstance to manage [Memorystore for Valkey Instances](https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances)
 
 ## Bug Fixes:
 
