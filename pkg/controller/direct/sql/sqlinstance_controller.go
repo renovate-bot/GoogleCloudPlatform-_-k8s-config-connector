@@ -903,6 +903,20 @@ func (a *sqlInstanceAdapter) toProto(ctx context.Context, instance *api.Database
 		return nil, fmt.Errorf("marshalling api to json: %w", err)
 	}
 
+	// Mask out fields that are not in the proto
+	var m map[string]any
+	if err := json.Unmarshal(j, &m); err != nil {
+		return nil, fmt.Errorf("unmarshalling api to map: %w", err)
+	}
+	delete(m, "satisfiesPzi")
+	if settings, ok := m["settings"].(map[string]any); ok {
+		delete(settings, "backupTier")
+	}
+	j, err = json.Marshal(m)
+	if err != nil {
+		return nil, fmt.Errorf("marshalling map to json: %w", err)
+	}
+
 	out := &pb.DatabaseInstance{}
 	unmarshalOptions := protojson.UnmarshalOptions{
 		DiscardUnknown: true,
