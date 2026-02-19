@@ -255,20 +255,53 @@ func RunLicenseVerify(ctx context.Context, opts RunLicenseVerifyOptions) error {
 	return nil
 }
 
+var mustShipCodeByLicense = map[string]bool{
+	"APACHE-2.0":       false,
+	"BSD-3-CLAUSE":     false,
+	"BSD-2-CLAUSE":     false,
+	"MIT":              false,
+	"UNICODE-DFS-2016": false,
+	"MPL-2.0":          true,
+	"PUBLICDOMAIN":     false,
+	"ISC":              false,
+	"HPND":             false,
+	"CC-BY-3.0":        false,
+	"BSL-1.0":          false,
+	"NCSA":             false,
+	"OPENSSL":          false,
+	"ZLIB":             false,
+}
+
 func checkModule(module *Module) error {
-	p := filepath.Join("modules", module.Name, module.Version+".yaml")
-	b, err := modulesFS.ReadFile(p)
-	if err != nil {
-		return fmt.Errorf("error reading module file %s: %w", p, err)
+	p := filepath.Join("experiments/tools/licensescan/modules", module.Name, module.Version+".yaml")
+	b, err := os.ReadFile(p)
+	if err != nil && os.IsNotExist(err) {
+		pFS := filepath.Join("modules", module.Name, module.Version+".yaml")
+		b, err = modulesFS.ReadFile(pFS)
 	}
+	if err != nil {
+		return fmt.Errorf("error reading module file for %s@%s: %w", module.Name, module.Version, err)
+	}
+
 	info := &moduleInfo{}
 	if err := yaml.Unmarshal(b, info); err != nil {
-		return fmt.Errorf("error parsing %q: %w", p, err)
+		return fmt.Errorf("error parsing %s@%s: %w", module.Name, module.Version, err)
 	}
 	info.License = strings.TrimSpace(info.License)
 	if info.License == "TODO" || info.License == "" {
 		return fmt.Errorf("license not known for %s@%s", module.Name, module.Version)
 	}
+
+	licenses := strings.Split(info.License, ",")
+	for _, license := range licenses {
+		license = strings.TrimSpace(license)
+		license = strings.ToUpper(license)
+
+		if _, exists := mustShipCodeByLicense[license]; !exists {
+			return fmt.Errorf("unknown license %q (for %s@%s)", license, module.Name, module.Version)
+		}
+	}
+
 	return nil
 }
 
@@ -350,23 +383,6 @@ func RunLicenseScan(ctx context.Context, opts RunLicenseScanOptions) error {
 		}
 	}
 
-	mustShipCodeByLicense := map[string]bool{
-		"APACHE-2.0":       false,
-		"BSD-3-CLAUSE":     false,
-		"BSD-2-CLAUSE":     false,
-		"MIT":              false,
-		"UNICODE-DFS-2016": false,
-		"MPL-2.0":          true,
-		"PUBLICDOMAIN":     false,
-		"ISC":              false,
-		"HPND":             false,
-		"CC-BY-3.0":        false,
-		"BSL-1.0":          false,
-		"NCSA":             false,
-		"OPENSSL":          false,
-		"ZLIB":             false,
-	}
-
 	if len(errors) == 0 {
 		for _, module := range modules {
 			if len(module.Info.LicenseURLs) == 0 {
@@ -378,9 +394,6 @@ func RunLicenseScan(ctx context.Context, opts RunLicenseScanOptions) error {
 				license = strings.TrimSpace(license)
 				license = strings.ToUpper(license)
 
-				if _, exists := mustShipCodeByLicense[license]; !exists {
-					return fmt.Errorf("unknown license %q for mustShipCode (for %s@%s)", license, module.Name, module.Version)
-				}
 				if mustShipCodeByLicense[license] {
 					module.Info.MustShipCode = true
 				}
