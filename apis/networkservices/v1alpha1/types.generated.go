@@ -18,7 +18,7 @@
 // krm.version: v1alpha1
 // proto.service: google.cloud.networkservices.v1
 // resource: NetworkServicesServiceBinding:ServiceBinding
-// resource: NetworkServicesLBRouteExtension:LbRouteExtension
+// resource: NetworkServicesLbRouteExtension:LbRouteExtension
 
 package v1alpha1
 

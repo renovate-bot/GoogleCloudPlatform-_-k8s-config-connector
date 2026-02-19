@@ -15,8 +15,8 @@ spec:
   names:
     categories:
     - gcp
-    kind: NetworkServicesLBRouteExtension
-    listKind: NetworkServicesLBRouteExtensionList
+    kind: NetworkServicesLbRouteExtension
+    listKind: NetworkServicesLbRouteExtensionList
     plural: networkserviceslbrouteextensions
     shortNames:
     - gcpnetworkserviceslbrouteextension
@@ -44,7 +44,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension
+        description: NetworkServicesLbRouteExtension is the Schema for the NetworkServicesLbRouteExtension
           API
         properties:
           apiVersion:
@@ -60,8 +60,8 @@ spec:
           metadata:
             type: object
           spec:
-            description: NetworkServicesLBRouteExtensionSpec defines the desired state
-              of NetworkServicesLBRouteExtension
+            description: NetworkServicesLbRouteExtensionSpec defines the desired state
+              of NetworkServicesLbRouteExtension
             properties:
               description:
                 description: Optional. A human-readable description of the resource.
@@ -315,7 +315,7 @@ spec:
                     type: string
                 type: object
               resourceID:
-                description: The NetworkServicesLBRouteExtension name. If not given,
+                description: The NetworkServicesLbRouteExtension name. If not given,
                   the metadata.name will be used.
                 type: string
             required:
@@ -323,8 +323,8 @@ spec:
             - projectRef
             type: object
           status:
-            description: NetworkServicesLBRouteExtensionStatus defines the config
-              connector machine state of NetworkServicesLBRouteExtension
+            description: NetworkServicesLbRouteExtensionStatus defines the config
+              connector machine state of NetworkServicesLbRouteExtension
             properties:
               conditions:
                 description: Conditions represent the latest available observations
@@ -353,7 +353,7 @@ spec:
                   type: object
                 type: array
               externalRef:
-                description: A unique specifier for the NetworkServicesLBRouteExtension
+                description: A unique specifier for the NetworkServicesLbRouteExtension
                   resource in GCP.
                 type: string
               observedGeneration:

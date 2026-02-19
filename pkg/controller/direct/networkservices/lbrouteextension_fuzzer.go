@@ -24,13 +24,13 @@ import (
 )
 
 func init() {
-	fuzztesting.RegisterKRMFuzzer(networkServicesLBRouteExtensionFuzzer())
+	fuzztesting.RegisterKRMFuzzer(networkServicesLbRouteExtensionFuzzer())
 }
 
-func networkServicesLBRouteExtensionFuzzer() fuzztesting.KRMFuzzer {
+func networkServicesLbRouteExtensionFuzzer() fuzztesting.KRMFuzzer {
 	f := fuzztesting.NewKRMTypedFuzzer(&pb.LbRouteExtension{},
-		NetworkServicesLBRouteExtensionSpec_FromProto, NetworkServicesLBRouteExtensionSpec_ToProto,
-		NetworkServicesLBRouteExtensionObservedState_FromProto, NetworkServicesLBRouteExtensionObservedState_ToProto,
+		NetworkServicesLbRouteExtensionSpec_FromProto, NetworkServicesLbRouteExtensionSpec_ToProto,
+		NetworkServicesLbRouteExtensionObservedState_FromProto, NetworkServicesLbRouteExtensionObservedState_ToProto,
 	)
 
 	f.SpecField(".description")

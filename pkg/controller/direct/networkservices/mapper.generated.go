@@ -94,11 +94,11 @@ func ExtensionChain_MatchCondition_ToProto(mapCtx *direct.MapContext, in *krm.Ex
 	out.CelExpression = direct.ValueOf(in.CelExpression)
 	return out
 }
-func NetworkServicesLBRouteExtensionObservedState_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLBRouteExtensionObservedState {
+func NetworkServicesLbRouteExtensionObservedState_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLbRouteExtensionObservedState {
 	if in == nil {
 		return nil
 	}
-	out := &krm.NetworkServicesLBRouteExtensionObservedState{}
+	out := &krm.NetworkServicesLbRouteExtensionObservedState{}
 	// MISSING: Name
 	out.CreateTime = direct.StringTimestamp_FromProto(mapCtx, in.GetCreateTime())
 	out.UpdateTime = direct.StringTimestamp_FromProto(mapCtx, in.GetUpdateTime())
@@ -106,7 +106,7 @@ func NetworkServicesLBRouteExtensionObservedState_FromProto(mapCtx *direct.MapCo
 	// MISSING: ForwardingRules
 	return out
 }
-func NetworkServicesLBRouteExtensionObservedState_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLBRouteExtensionObservedState) *pb.LbRouteExtension {
+func NetworkServicesLbRouteExtensionObservedState_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLbRouteExtensionObservedState) *pb.LbRouteExtension {
 	if in == nil {
 		return nil
 	}
@@ -118,11 +118,11 @@ func NetworkServicesLBRouteExtensionObservedState_ToProto(mapCtx *direct.MapCont
 	// MISSING: ForwardingRules
 	return out
 }
-func NetworkServicesLBRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLBRouteExtensionSpec {
+func NetworkServicesLbRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLbRouteExtensionSpec {
 	if in == nil {
 		return nil
 	}
-	out := &krm.NetworkServicesLBRouteExtensionSpec{}
+	out := &krm.NetworkServicesLbRouteExtensionSpec{}
 	// MISSING: Name
 	out.Description = direct.LazyPtr(in.GetDescription())
 	// MISSING: Labels
@@ -138,7 +138,7 @@ func NetworkServicesLBRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in
 	out.Metadata = direct.Struct_FromProto(mapCtx, in.GetMetadata())
 	return out
 }
-func NetworkServicesLBRouteExtensionSpec_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLBRouteExtensionSpec) *pb.LbRouteExtension {
+func NetworkServicesLbRouteExtensionSpec_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLbRouteExtensionSpec) *pb.LbRouteExtension {
 	if in == nil {
 		return nil
 	}

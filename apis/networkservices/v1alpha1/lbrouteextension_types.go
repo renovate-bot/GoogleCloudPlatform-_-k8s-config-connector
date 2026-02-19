@@ -22,15 +22,15 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-var NetworkServicesLBRouteExtensionGVK = GroupVersion.WithKind("NetworkServicesLBRouteExtension")
+var NetworkServicesLbRouteExtensionGVK = GroupVersion.WithKind("NetworkServicesLbRouteExtension")
 
-// NetworkServicesLBRouteExtensionSpec defines the desired state of NetworkServicesLBRouteExtension
+// NetworkServicesLbRouteExtensionSpec defines the desired state of NetworkServicesLbRouteExtension
 // +kcc:spec:proto=google.cloud.networkservices.v1.LbRouteExtension
-type NetworkServicesLBRouteExtensionSpec struct {
+type NetworkServicesLbRouteExtensionSpec struct {
 	// Required. Defines the parent path of the resource.
 	*parent.ProjectAndLocationRef `json:",inline"`
 
-	// The NetworkServicesLBRouteExtension name. If not given, the metadata.name will be used.
+	// The NetworkServicesLbRouteExtension name. If not given, the metadata.name will be used.
 	ResourceID *string `json:"resourceID,omitempty"`
 
 	// Optional. A human-readable description of the resource.
@@ -58,8 +58,8 @@ type NetworkServicesLBRouteExtensionSpec struct {
 	Metadata *apiextensionsv1.JSON `json:"metadata,omitempty"`
 }
 
-// NetworkServicesLBRouteExtensionStatus defines the config connector machine state of NetworkServicesLBRouteExtension
-type NetworkServicesLBRouteExtensionStatus struct {
+// NetworkServicesLbRouteExtensionStatus defines the config connector machine state of NetworkServicesLbRouteExtension
+type NetworkServicesLbRouteExtensionStatus struct {
 	/* Conditions represent the latest available observations of the
 	   object's current state. */
 	Conditions []v1alpha1.Condition `json:"conditions,omitempty"`
@@ -67,16 +67,16 @@ type NetworkServicesLBRouteExtensionStatus struct {
 	// ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
 	ObservedGeneration *int64 `json:"observedGeneration,omitempty"`
 
-	// A unique specifier for the NetworkServicesLBRouteExtension resource in GCP.
+	// A unique specifier for the NetworkServicesLbRouteExtension resource in GCP.
 	ExternalRef *string `json:"externalRef,omitempty"`
 
 	// ObservedState is the state of the resource as most recently observed in GCP.
-	ObservedState *NetworkServicesLBRouteExtensionObservedState `json:"observedState,omitempty"`
+	ObservedState *NetworkServicesLbRouteExtensionObservedState `json:"observedState,omitempty"`
 }
 
-// NetworkServicesLBRouteExtensionObservedState is the state of the NetworkServicesLBRouteExtension resource as most recently observed in GCP.
+// NetworkServicesLbRouteExtensionObservedState is the state of the NetworkServicesLbRouteExtension resource as most recently observed in GCP.
 // +kcc:observedstate:proto=google.cloud.networkservices.v1.LbRouteExtension
-type NetworkServicesLBRouteExtensionObservedState struct {
+type NetworkServicesLbRouteExtensionObservedState struct {
 	// Output only. The timestamp when the resource was created.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.create_time
 	CreateTime *string `json:"createTime,omitempty"`
@@ -220,25 +220,25 @@ type ExtensionChain_Extension struct {
 // +kubebuilder:printcolumn:name="Status",JSONPath=".status.conditions[?(@.type=='Ready')].reason",type="string",description="The reason for the value in 'Ready'"
 // +kubebuilder:printcolumn:name="Status Age",JSONPath=".status.conditions[?(@.type=='Ready')].lastTransitionTime",type="date",description="The last transition time for the value in 'Status'"
 
-// NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension API
+// NetworkServicesLbRouteExtension is the Schema for the NetworkServicesLbRouteExtension API
 // +k8s:openapi-gen=true
-type NetworkServicesLBRouteExtension struct {
+type NetworkServicesLbRouteExtension struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
 	// +required
-	Spec   NetworkServicesLBRouteExtensionSpec   `json:"spec,omitempty"`
-	Status NetworkServicesLBRouteExtensionStatus `json:"status,omitempty"`
+	Spec   NetworkServicesLbRouteExtensionSpec   `json:"spec,omitempty"`
+	Status NetworkServicesLbRouteExtensionStatus `json:"status,omitempty"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
-// NetworkServicesLBRouteExtensionList contains a list of NetworkServicesLBRouteExtension
-type NetworkServicesLBRouteExtensionList struct {
+// NetworkServicesLbRouteExtensionList contains a list of NetworkServicesLbRouteExtension
+type NetworkServicesLbRouteExtensionList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []NetworkServicesLBRouteExtension `json:"items"`
+	Items           []NetworkServicesLbRouteExtension `json:"items"`
 }
 
 func init() {
-	SchemeBuilder.Register(&NetworkServicesLBRouteExtension{}, &NetworkServicesLBRouteExtensionList{})
+	SchemeBuilder.Register(&NetworkServicesLbRouteExtension{}, &NetworkServicesLbRouteExtensionList{})
 }
