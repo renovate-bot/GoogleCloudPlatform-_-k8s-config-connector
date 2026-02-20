@@ -38,6 +38,13 @@ func SQLInstanceKRMToGCP(in *krm.SQLInstance, actual *api.DatabaseInstance, fiel
 		return nil, fmt.Errorf("cannot convert nil KRM SQLInstance to GCP DatabaseInstance")
 	}
 
+	if in.Spec.Settings.Edition != nil {
+		edition := *in.Spec.Settings.Edition
+		if edition != "ENTERPRISE" && edition != "ENTERPRISE_PLUS" {
+			return nil, fmt.Errorf("unrecognized edition %q; supported values are ENTERPRISE and ENTERPRISE_PLUS", edition)
+		}
+	}
+
 	out := &api.DatabaseInstance{
 		DatabaseVersion:             direct.ValueOf(in.Spec.DatabaseVersion),
 		DiskEncryptionConfiguration: InstanceEncryptionKMSCryptoKeyRefKRMToGCP(in.Spec.EncryptionKMSCryptoKeyRef),
