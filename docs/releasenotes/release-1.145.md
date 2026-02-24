@@ -2,7 +2,7 @@
 
 ## This version has not yet been released, this document is to prepare release notes for the upcoming release
 
-*   Special shout-outs to acpana, anhdle-sso, cheftako, dhavalbhensdadiya-crest, eugenenuke, gemmahou, iamkonohamaru, justinsb, katrielt, maqiuyujoyce, xiaoweim, yuwenma for their contributions to this release.
+*   Special shout-outs to @acpana, @anhdle-sso, @cheftako, @dhavalbhensdadiya-crest, @eugenenuke, @gemmahou, @iamkonohamaru, @justinsb, @katrielt, @maqiuyujoyce, @xiaoweim, @yuwenma for their contributions to this release.
 
 ## New Beta Resources (Direct Reconciler):
 
@@ -49,9 +49,6 @@ We have added support for structured diff reporting to the following direct cont
 * MemorystoreInstance to manage [Memorystore for Valkey Instances](https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances)
 
 ## Bug Fixes:
-
-*   [`AlloyDBBackup`](https://cloud.google.com/config-connector/docs/reference/resource-docs/alloydb/alloydbbackup)
-    *   Corrected the field description for service-generated resourceID.
 
 *   [`DataformRepository`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataform/dataformrepository)
     *   Fixed a bug where the `serviceAccountRef` field could not be updated.
