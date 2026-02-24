@@ -91,11 +91,6 @@ func sqlInstanceLegacyFuzzer() fuzztesting.KRMFuzzer_NoProto {
 				in.Settings.UserLabels = make(map[string]string)
 			}
 			in.Settings.UserLabels["managed-by-cnrm"] = "true"
-			if in.Settings.Edition != "" {
-				if in.Settings.Edition != "ENTERPRISE_PLUS" {
-					in.Settings.Edition = "ENTERPRISE"
-				}
-			}
 			if len(in.Settings.DenyMaintenancePeriods) > 1 {
 				in.Settings.DenyMaintenancePeriods = in.Settings.DenyMaintenancePeriods[:1]
 			}
