@@ -16,12 +16,14 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 	"strings"
 
 	"github.com/metoro-io/mcp-golang"
 	"github.com/metoro-io/mcp-golang/transport/stdio"
+	"github.com/spf13/cobra"
 )
 
 const (
@@ -55,7 +57,88 @@ type BackwardCompatArguments struct {
 	Ref  string `json:"ref" jsonschema:"description=Git ref for the old version (default: HEAD)."`
 }
 
+type StdioOptions struct {
+}
+
+type EquivalentOptions struct {
+	File string
+	Ref  string
+}
+
+type CompatibleOptions struct {
+	File string
+	Ref  string
+}
+
+
 func main() {
+	rootCmd := &cobra.Command{
+		Use:   "crd-mcp-server subcommand",
+		Short: "crd-mcp-server is a MCP server for KCC handling of CRDs.",
+	}
+
+	rootCmd.AddCommand(BuildStdioCmd())
+	rootCmd.AddCommand(BuildEquivalentCmd())
+	rootCmd.AddCommand(BuildCompatibleCmd())
+
+	if err := rootCmd.Execute(); err != nil {
+		fmt.Fprintf(os.Stderr, "%v\n", err)
+		os.Exit(1)
+	}
+}
+
+func BuildStdioCmd() *cobra.Command {
+	var opts StdioOptions
+	cmd := &cobra.Command{
+		Use:     "stdio",
+		Short:   "stdio",
+		Example: `crd-mcp-server stdio`,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return RunStdio(cmd.Context(), &opts)
+		},
+		Args: cobra.ExactArgs(0),
+	}
+
+	return cmd
+}
+
+func BuildEquivalentCmd() *cobra.Command {
+	var opts EquivalentOptions
+	cmd := &cobra.Command{
+		Use:     "equivalent",
+		Short:   "CLI version of the equivalent MCP. Is the CRD equivalent to the older form?",
+		Example: `crd-mcp-server equivalent`,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return RunEquivalent(cmd.Context(), &opts)
+		},
+		Args: cobra.ExactArgs(0),
+	}
+	cmd.Flags().StringVarP(&opts.File, "file", "", opts.File, "Path to the CRD YAML file to check.")
+	cmd.MarkFlagRequired("file") 
+	cmd.Flags().StringVarP(&opts.Ref, "ref", "", "HEAD", "Git ref for the old version (default: HEAD).")
+
+	return cmd
+}
+
+func BuildCompatibleCmd() *cobra.Command {
+	var opts CompatibleOptions
+	cmd := &cobra.Command{
+		Use:     "compatible",
+		Short:   "CLI version of the compatible MCP. Is the CRD backward compatible with the older form?",
+		Example: `crd-mcp-server compatible`,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			return RunCompatible(cmd.Context(), &opts)
+		},
+		Args: cobra.ExactArgs(0),
+	}
+	cmd.Flags().StringVarP(&opts.File, "file", "", opts.File, "Path to the CRD YAML file to check.")
+	cmd.MarkFlagRequired("file") 
+	cmd.Flags().StringVarP(&opts.Ref, "ref", "", "HEAD", "Git ref for the old version (default: HEAD).")
+
+	return cmd
+}
+
+func RunStdio(ctx context.Context, opts *StdioOptions) error {
 	done := make(chan struct{})
 	server := mcp_golang.NewServer(stdio.NewStdioServerTransport())
 
@@ -71,6 +154,28 @@ func main() {
 	}
 
 	<-done
+
+	return nil
+}
+
+func RunEquivalent(ctx context.Context, opts *EquivalentOptions) error {
+	result, err := runEquivalenceCheck(opts.File, opts.Ref)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v", err)
+		return err
+	}
+	fmt.Fprint(os.Stdout, result)
+	return nil
+}
+
+func RunCompatible(ctx context.Context, opts *CompatibleOptions) error {
+	result, err := runBackwardCompatCheck(opts.File, opts.Ref)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v", err)
+		return err
+	}
+	fmt.Fprint(os.Stdout, result)
+	return nil
 }
 
 func handleCheckEquivalence(arguments EquivalenceArguments) (*mcp_golang.ToolResponse, error) {
