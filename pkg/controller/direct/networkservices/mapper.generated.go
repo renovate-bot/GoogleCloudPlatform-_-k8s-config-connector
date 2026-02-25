@@ -48,36 +48,6 @@ func ExtensionChain_ToProto(mapCtx *direct.MapContext, in *krm.ExtensionChain) *
 	out.Extensions = direct.Slice_ToProto(mapCtx, in.Extensions, ExtensionChain_Extension_ToProto)
 	return out
 }
-func ExtensionChain_Extension_FromProto(mapCtx *direct.MapContext, in *pb.ExtensionChain_Extension) *krm.ExtensionChain_Extension {
-	if in == nil {
-		return nil
-	}
-	out := &krm.ExtensionChain_Extension{}
-	out.Name = direct.LazyPtr(in.GetName())
-	out.Authority = direct.LazyPtr(in.GetAuthority())
-	out.Service = direct.LazyPtr(in.GetService())
-	out.SupportedEvents = direct.EnumSlice_FromProto(mapCtx, in.SupportedEvents)
-	out.Timeout = direct.StringDuration_FromProto(mapCtx, in.GetTimeout())
-	out.FailOpen = direct.LazyPtr(in.GetFailOpen())
-	out.ForwardHeaders = in.ForwardHeaders
-	out.Metadata = direct.Struct_FromProto(mapCtx, in.GetMetadata())
-	return out
-}
-func ExtensionChain_Extension_ToProto(mapCtx *direct.MapContext, in *krm.ExtensionChain_Extension) *pb.ExtensionChain_Extension {
-	if in == nil {
-		return nil
-	}
-	out := &pb.ExtensionChain_Extension{}
-	out.Name = direct.ValueOf(in.Name)
-	out.Authority = direct.ValueOf(in.Authority)
-	out.Service = direct.ValueOf(in.Service)
-	out.SupportedEvents = direct.EnumSlice_ToProto[pb.EventType](mapCtx, in.SupportedEvents)
-	out.Timeout = direct.StringDuration_ToProto(mapCtx, in.Timeout)
-	out.FailOpen = direct.ValueOf(in.FailOpen)
-	out.ForwardHeaders = in.ForwardHeaders
-	out.Metadata = direct.Struct_ToProto(mapCtx, in.Metadata)
-	return out
-}
 func ExtensionChain_MatchCondition_FromProto(mapCtx *direct.MapContext, in *pb.ExtensionChain_MatchCondition) *krm.ExtensionChain_MatchCondition {
 	if in == nil {
 		return nil
@@ -94,11 +64,11 @@ func ExtensionChain_MatchCondition_ToProto(mapCtx *direct.MapContext, in *krm.Ex
 	out.CelExpression = direct.ValueOf(in.CelExpression)
 	return out
 }
-func NetworkServicesLbRouteExtensionObservedState_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLbRouteExtensionObservedState {
+func NetworkServicesLBRouteExtensionObservedState_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLBRouteExtensionObservedState {
 	if in == nil {
 		return nil
 	}
-	out := &krm.NetworkServicesLbRouteExtensionObservedState{}
+	out := &krm.NetworkServicesLBRouteExtensionObservedState{}
 	// MISSING: Name
 	out.CreateTime = direct.StringTimestamp_FromProto(mapCtx, in.GetCreateTime())
 	out.UpdateTime = direct.StringTimestamp_FromProto(mapCtx, in.GetUpdateTime())
@@ -106,7 +76,7 @@ func NetworkServicesLbRouteExtensionObservedState_FromProto(mapCtx *direct.MapCo
 	// MISSING: ForwardingRules
 	return out
 }
-func NetworkServicesLbRouteExtensionObservedState_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLbRouteExtensionObservedState) *pb.LbRouteExtension {
+func NetworkServicesLBRouteExtensionObservedState_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLBRouteExtensionObservedState) *pb.LbRouteExtension {
 	if in == nil {
 		return nil
 	}
@@ -118,11 +88,11 @@ func NetworkServicesLbRouteExtensionObservedState_ToProto(mapCtx *direct.MapCont
 	// MISSING: ForwardingRules
 	return out
 }
-func NetworkServicesLbRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLbRouteExtensionSpec {
+func NetworkServicesLBRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in *pb.LbRouteExtension) *krm.NetworkServicesLBRouteExtensionSpec {
 	if in == nil {
 		return nil
 	}
-	out := &krm.NetworkServicesLbRouteExtensionSpec{}
+	out := &krm.NetworkServicesLBRouteExtensionSpec{}
 	// MISSING: Name
 	out.Description = direct.LazyPtr(in.GetDescription())
 	// MISSING: Labels
@@ -138,7 +108,7 @@ func NetworkServicesLbRouteExtensionSpec_FromProto(mapCtx *direct.MapContext, in
 	out.Metadata = direct.Struct_FromProto(mapCtx, in.GetMetadata())
 	return out
 }
-func NetworkServicesLbRouteExtensionSpec_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLbRouteExtensionSpec) *pb.LbRouteExtension {
+func NetworkServicesLBRouteExtensionSpec_ToProto(mapCtx *direct.MapContext, in *krm.NetworkServicesLBRouteExtensionSpec) *pb.LbRouteExtension {
 	if in == nil {
 		return nil
 	}

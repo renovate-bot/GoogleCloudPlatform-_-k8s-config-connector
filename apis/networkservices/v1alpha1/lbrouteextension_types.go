@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+// Copyright 2026 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,35 +22,38 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-var NetworkServicesLbRouteExtensionGVK = GroupVersion.WithKind("NetworkServicesLbRouteExtension")
+var NetworkServicesLBRouteExtensionGVK = GroupVersion.WithKind("NetworkServicesLBRouteExtension")
 
-// NetworkServicesLbRouteExtensionSpec defines the desired state of NetworkServicesLbRouteExtension
+// NetworkServicesLBRouteExtensionSpec defines the desired state of NetworkServicesLBRouteExtension
 // +kcc:spec:proto=google.cloud.networkservices.v1.LbRouteExtension
-type NetworkServicesLbRouteExtensionSpec struct {
+type NetworkServicesLBRouteExtensionSpec struct {
 	// Required. Defines the parent path of the resource.
 	*parent.ProjectAndLocationRef `json:",inline"`
 
-	// The NetworkServicesLbRouteExtension name. If not given, the metadata.name will be used.
+	// The NetworkServicesLBRouteExtension name. If not given, the metadata.name will be used.
 	ResourceID *string `json:"resourceID,omitempty"`
 
 	// Optional. A human-readable description of the resource.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.description
 	Description *string `json:"description,omitempty"`
 
-	// Optional. Set of labels associated with the LbRouteExtension resource.
+	// Optional. Set of labels associated with the LBRouteExtension resource.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.labels
 	// Labels map[string]string `json:"labels,omitempty"`
 
-	// Required. A list of references to the forwarding rules to which this service extension is attached. At least one forwarding rule is required. Only one LbRouteExtension resource can be associated with a forwarding rule.
+	// Required. A list of references to the forwarding rules to which this service extension is attached. At least one forwarding rule is required. Only one LBRouteExtension resource can be associated with a forwarding rule.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.forwarding_rules
+	// +required
 	ForwardingRuleRefs []*computev1beta1.ForwardingRuleRef `json:"forwardingRuleRefs,omitempty"`
 
 	// Required. A set of ordered extension chains that contain the match conditions and extensions to execute. Match conditions for each extension chain are evaluated in sequence for a given request. The first extension chain that has a condition that matches the request is executed. Any subsequent extension chains do not execute. Limited to 5 extension chains per resource.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.extension_chains
+	// +required
 	ExtensionChains []ExtensionChain `json:"extensionChains,omitempty"`
 
 	// Required. All backend services and forwarding rules referenced by this extension must share the same load balancing scheme. Supported values: INTERNAL_MANAGED, EXTERNAL_MANAGED.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.load_balancing_scheme
+	// +required
 	LoadBalancingScheme *string `json:"loadBalancingScheme,omitempty"`
 
 	// Optional. The metadata provided here is included as part of the metadata_context (of type google.protobuf.Struct) in the ProcessingRequest message sent to the extension server.
@@ -58,8 +61,8 @@ type NetworkServicesLbRouteExtensionSpec struct {
 	Metadata *apiextensionsv1.JSON `json:"metadata,omitempty"`
 }
 
-// NetworkServicesLbRouteExtensionStatus defines the config connector machine state of NetworkServicesLbRouteExtension
-type NetworkServicesLbRouteExtensionStatus struct {
+// NetworkServicesLBRouteExtensionStatus defines the config connector machine state of NetworkServicesLBRouteExtension
+type NetworkServicesLBRouteExtensionStatus struct {
 	/* Conditions represent the latest available observations of the
 	   object's current state. */
 	Conditions []v1alpha1.Condition `json:"conditions,omitempty"`
@@ -67,16 +70,16 @@ type NetworkServicesLbRouteExtensionStatus struct {
 	// ObservedGeneration is the generation of the resource that was most recently observed by the Config Connector controller. If this is equal to metadata.generation, then that means that the current reported status reflects the most recent desired state of the resource.
 	ObservedGeneration *int64 `json:"observedGeneration,omitempty"`
 
-	// A unique specifier for the NetworkServicesLbRouteExtension resource in GCP.
+	// A unique specifier for the NetworkServicesLBRouteExtension resource in GCP.
 	ExternalRef *string `json:"externalRef,omitempty"`
 
 	// ObservedState is the state of the resource as most recently observed in GCP.
-	ObservedState *NetworkServicesLbRouteExtensionObservedState `json:"observedState,omitempty"`
+	ObservedState *NetworkServicesLBRouteExtensionObservedState `json:"observedState,omitempty"`
 }
 
-// NetworkServicesLbRouteExtensionObservedState is the state of the NetworkServicesLbRouteExtension resource as most recently observed in GCP.
+// NetworkServicesLBRouteExtensionObservedState is the state of the NetworkServicesLBRouteExtension resource as most recently observed in GCP.
 // +kcc:observedstate:proto=google.cloud.networkservices.v1.LbRouteExtension
-type NetworkServicesLbRouteExtensionObservedState struct {
+type NetworkServicesLBRouteExtensionObservedState struct {
 	// Output only. The timestamp when the resource was created.
 	// +kcc:proto:field=google.cloud.networkservices.v1.LbRouteExtension.create_time
 	CreateTime *string `json:"createTime,omitempty"`
@@ -86,7 +89,48 @@ type NetworkServicesLbRouteExtensionObservedState struct {
 	UpdateTime *string `json:"updateTime,omitempty"`
 }
 
+// +kcc:proto=google.cloud.networkservices.v1.ExtensionChain
+type ExtensionChain struct {
+	// Required. The name for this extension chain.
+	//  The name is logged as part of the HTTP request logs.
+	//  The name must conform with RFC-1034, is restricted to lower-cased letters,
+	//  numbers and hyphens, and can have a maximum length of 63 characters.
+	//  Additionally, the first character must be a letter and the last a letter or
+	//  a number.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.name
+	// +required
+	Name *string `json:"name,omitempty"`
+
+	// Required. Conditions under which this chain is invoked for a request.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.match_condition
+	// +required
+	MatchCondition *ExtensionChain_MatchCondition `json:"matchCondition,omitempty"`
+
+	// Required. A set of extensions to execute for the matching request.
+	//  At least one extension is required.
+	//  Up to 3 extensions can be defined for each extension chain
+	//  for `LBTrafficExtension` resource.
+	//  `LBRouteExtension` and `LBEdgeExtension` chains are limited to 1 extension
+	//  per extension chain.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.extensions
+	// +required
+	Extensions []ExtensionChain_Extension `json:"extensions,omitempty"`
+}
+
+// +kcc:proto=google.cloud.networkservices.v1.ExtensionChain.MatchCondition
+type ExtensionChain_MatchCondition struct {
+	// Required. A Common Expression Language (CEL) expression that is used to
+	//  match requests for which the extension chain is executed.
+	//
+	//  For more information, see [CEL matcher language
+	//  reference](https://cloud.google.com/service-extensions/docs/cel-matcher-language-reference).
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.MatchCondition.cel_expression
+	// +required
+	CelExpression *string `json:"celExpression,omitempty"`
+}
+
 // +kcc:proto=google.cloud.networkservices.v1.ExtensionChain.Extension
+// +kubebuilder:validation:XValidation:rule="has(self.backendServiceRef) != has(self.wasmPluginRef)",message="either backendServiceRef or wasmPluginRef must be set"
 type ExtensionChain_Extension struct {
 	// Required. The name for this extension.
 	//  The name is logged as part of the HTTP request logs.
@@ -95,6 +139,7 @@ type ExtensionChain_Extension struct {
 	//  characters. Additionally, the first character must be a letter and the
 	//  last a letter or a number.
 	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.Extension.name
+	// +required
 	Name *string `json:"name,omitempty"`
 
 	// Optional. The `:authority` header in the gRPC request sent from Envoy
@@ -106,7 +151,7 @@ type ExtensionChain_Extension struct {
 	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.Extension.authority
 	Authority *string `json:"authority,omitempty"`
 
-	// Required. The reference to the service that runs the extension.
+	// Optional. The reference to the service that runs the extension.
 	//
 	//  To configure a callout extension, `service` must be a fully-qualified
 	//  reference
@@ -116,6 +161,10 @@ type ExtensionChain_Extension struct {
 	//  `https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}`
 	//  or
 	//  `https://www.googleapis.com/compute/v1/projects/{project}/global/backendServices/{backendService}`.
+	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.Extension.service
+	BackendServiceRef *computev1beta1.ComputeBackendServiceRef `json:"backendServiceRef,omitempty"`
+
+	// Optional. The reference to the WasmPlugin resource.
 	//
 	//  To configure a plugin extension, `service` must be a reference
 	//  to a [`WasmPlugin`
@@ -126,21 +175,20 @@ type ExtensionChain_Extension struct {
 	//  `//networkservices.googleapis.com/projects/{project}/locations/{location}/wasmPlugins/{wasmPlugin}`.
 	//
 	//  Plugin extensions are currently supported for the
-	//  `LbTrafficExtension`, the `LbRouteExtension`, and the `LbEdgeExtension`
+	//  `LBTrafficExtension`, the `LBRouteExtension`, and the `LBEdgeExtension`
 	//  resources.
 	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.Extension.service
-	// TODO(user): Convert to a proper reference once WasmPlugin is available.
-	Service *string `json:"service,omitempty"`
+	WasmPluginRef *NetworkServicesWasmPluginRef `json:"wasmPluginRef,omitempty"`
 
 	// Optional. A set of events during request or response processing for which
 	//  this extension is called.
 	//
-	//  For the `LbTrafficExtension` resource, this field is required.
+	//  For the `LBTrafficExtension` resource, this field is required.
 	//
-	//  For the `LbRouteExtension` resource, this field is optional. If
+	//  For the `LBRouteExtension` resource, this field is optional. If
 	//  unspecified, `REQUEST_HEADERS` event is assumed as supported.
 	//
-	//  For the `LbEdgeExtension` resource, this field is required and must only
+	//  For the `LBEdgeExtension` resource, this field is required and must only
 	//  contain `REQUEST_HEADERS` event.
 	// +kcc:proto:field=google.cloud.networkservices.v1.ExtensionChain.Extension.supported_events
 	SupportedEvents []string `json:"supportedEvents,omitempty"`
@@ -220,25 +268,25 @@ type ExtensionChain_Extension struct {
 // +kubebuilder:printcolumn:name="Status",JSONPath=".status.conditions[?(@.type=='Ready')].reason",type="string",description="The reason for the value in 'Ready'"
 // +kubebuilder:printcolumn:name="Status Age",JSONPath=".status.conditions[?(@.type=='Ready')].lastTransitionTime",type="date",description="The last transition time for the value in 'Status'"
 
-// NetworkServicesLbRouteExtension is the Schema for the NetworkServicesLbRouteExtension API
+// NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension API
 // +k8s:openapi-gen=true
-type NetworkServicesLbRouteExtension struct {
+type NetworkServicesLBRouteExtension struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
 	// +required
-	Spec   NetworkServicesLbRouteExtensionSpec   `json:"spec,omitempty"`
-	Status NetworkServicesLbRouteExtensionStatus `json:"status,omitempty"`
+	Spec   NetworkServicesLBRouteExtensionSpec   `json:"spec,omitempty"`
+	Status NetworkServicesLBRouteExtensionStatus `json:"status,omitempty"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
-// NetworkServicesLbRouteExtensionList contains a list of NetworkServicesLbRouteExtension
-type NetworkServicesLbRouteExtensionList struct {
+// NetworkServicesLBRouteExtensionList contains a list of NetworkServicesLBRouteExtension
+type NetworkServicesLBRouteExtensionList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []NetworkServicesLbRouteExtension `json:"items"`
+	Items           []NetworkServicesLBRouteExtension `json:"items"`
 }
 
 func init() {
-	SchemeBuilder.Register(&NetworkServicesLbRouteExtension{}, &NetworkServicesLbRouteExtensionList{})
+	SchemeBuilder.Register(&NetworkServicesLBRouteExtension{}, &NetworkServicesLBRouteExtensionList{})
 }

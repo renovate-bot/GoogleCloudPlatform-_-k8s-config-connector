@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+// Copyright 2026 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,31 +25,31 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
-var _ identity.Identity = &LbRouteExtensionIdentity{}
+var _ identity.Identity = &LBRouteExtensionIdentity{}
 
-// LbRouteExtensionIdentity defines the resource reference to NetworkServicesLbRouteExtension, which "External" field
+// LBRouteExtensionIdentity defines the resource reference to NetworkServicesLBRouteExtension, which "External" field
 // holds the GCP identifier for the KRM object.
-type LbRouteExtensionIdentity struct {
+type LBRouteExtensionIdentity struct {
 	parent *parent.ProjectAndLocationParent
 	id     string
 }
 
-func (i *LbRouteExtensionIdentity) String() string {
+func (i *LBRouteExtensionIdentity) String() string {
 	return i.parent.String() + "/lbRouteExtensions/" + i.id
 }
 
-func (i *LbRouteExtensionIdentity) ID() string {
+func (i *LBRouteExtensionIdentity) ID() string {
 	return i.id
 }
 
-func (i *LbRouteExtensionIdentity) Parent() *parent.ProjectAndLocationParent {
+func (i *LBRouteExtensionIdentity) Parent() *parent.ProjectAndLocationParent {
 	return i.parent
 }
 
-func (i *LbRouteExtensionIdentity) FromExternal(ref string) error {
+func (i *LBRouteExtensionIdentity) FromExternal(ref string) error {
 	tokens := strings.Split(ref, "/lbRouteExtensions/")
 	if len(tokens) != 2 {
-		return fmt.Errorf("format of NetworkServicesLbRouteExtension external=%q was not known (use projects/{{projectID}}/locations/{{location}}/lbRouteExtensions/{{lbRouteExtensionID}})", ref)
+		return fmt.Errorf("format of NetworkServicesLBRouteExtension external=%q was not known (use projects/{{projectID}}/locations/{{location}}/lbRouteExtensions/{{lbRouteExtensionID}})", ref)
 	}
 	i.parent = &parent.ProjectAndLocationParent{}
 	if err := i.parent.FromExternal(tokens[0]); err != nil {
@@ -62,10 +62,10 @@ func (i *LbRouteExtensionIdentity) FromExternal(ref string) error {
 	return nil
 }
 
-var _ identity.Resource = &NetworkServicesLbRouteExtension{}
+var _ identity.Resource = &NetworkServicesLBRouteExtension{}
 
-func (obj *NetworkServicesLbRouteExtension) GetIdentity(ctx context.Context, reader client.Reader) (identity.Identity, error) {
-	id := &LbRouteExtensionIdentity{
+func (obj *NetworkServicesLBRouteExtension) GetIdentity(ctx context.Context, reader client.Reader) (identity.Identity, error) {
+	id := &LBRouteExtensionIdentity{
 		parent: &parent.ProjectAndLocationParent{},
 	}
 
@@ -87,7 +87,7 @@ func (obj *NetworkServicesLbRouteExtension) GetIdentity(ctx context.Context, rea
 	// Use approved External
 	externalRef := common.ValueOf(obj.Status.ExternalRef)
 	if externalRef != "" {
-		statusIdentity := &LbRouteExtensionIdentity{}
+		statusIdentity := &LBRouteExtensionIdentity{}
 		if err := statusIdentity.FromExternal(externalRef); err != nil {
 			return nil, fmt.Errorf("cannot parse existing externalRef=%q: %w", externalRef, err)
 		}
@@ -98,8 +98,8 @@ func (obj *NetworkServicesLbRouteExtension) GetIdentity(ctx context.Context, rea
 	return id, nil
 }
 
-func ParseLbRouteExtensionExternal(external string) (parent *parent.ProjectAndLocationParent, resourceID string, err error) {
-	id := &LbRouteExtensionIdentity{}
+func ParseLBRouteExtensionExternal(external string) (parent *parent.ProjectAndLocationParent, resourceID string, err error) {
+	id := &LBRouteExtensionIdentity{}
 	if err := id.FromExternal(external); err != nil {
 		return nil, "", err
 	}

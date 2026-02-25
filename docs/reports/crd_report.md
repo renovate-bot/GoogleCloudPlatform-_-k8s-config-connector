@@ -357,7 +357,7 @@
 | networkservices.cnrm.cloud.google.com         | NetworkServicesGateway                          | False        | True        | False  | DCL        |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesGRPCRoute                        | False        | True        | False  | DCL        |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesHTTPRoute                        | False        | True        | False  | DCL        |
-| networkservices.cnrm.cloud.google.com         | NetworkServicesLbRouteExtension                 | True         | False       | False  | Direct     |
+| networkservices.cnrm.cloud.google.com         | NetworkServicesLBRouteExtension                 | True         | False       | False  | Direct     |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesMesh                             | False        | True        | False  | DCL        |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesServiceBinding                   | True         | False       | False  | Direct     |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesTCPRoute                         | False        | True        | False  | DCL        |

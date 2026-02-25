@@ -15,8 +15,8 @@ spec:
   names:
     categories:
     - gcp
-    kind: NetworkServicesLbRouteExtension
-    listKind: NetworkServicesLbRouteExtensionList
+    kind: NetworkServicesLBRouteExtension
+    listKind: NetworkServicesLBRouteExtensionList
     plural: networkserviceslbrouteextensions
     shortNames:
     - gcpnetworkserviceslbrouteextension
@@ -44,7 +44,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: NetworkServicesLbRouteExtension is the Schema for the NetworkServicesLbRouteExtension
+        description: NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension
           API
         properties:
           apiVersion:
@@ -60,8 +60,8 @@ spec:
           metadata:
             type: object
           spec:
-            description: NetworkServicesLbRouteExtensionSpec defines the desired state
-              of NetworkServicesLbRouteExtension
+            description: NetworkServicesLBRouteExtensionSpec defines the desired state
+              of NetworkServicesLBRouteExtension
             properties:
               description:
                 description: Optional. A human-readable description of the resource.
@@ -78,8 +78,8 @@ spec:
                     extensions:
                       description: Required. A set of extensions to execute for the
                         matching request. At least one extension is required. Up to
-                        3 extensions can be defined for each extension chain for `LbTrafficExtension`
-                        resource. `LbRouteExtension` and `LbEdgeExtension` chains
+                        3 extensions can be defined for each extension chain for `LBTrafficExtension`
+                        resource. `LBRouteExtension` and `LBEdgeExtension` chains
                         are limited to 1 extension per extension chain.
                       items:
                         properties:
@@ -92,6 +92,45 @@ spec:
                                This field is not supported for plugin extensions. Setting it results in
                                a validation error.
                             type: string
+                          backendServiceRef:
+                            description: |-
+                              Optional. The reference to the service that runs the extension.
+
+                               To configure a callout extension, `service` must be a fully-qualified
+                               reference
+                               to a [backend
+                               service](https://cloud.google.com/compute/docs/reference/rest/v1/backendServices)
+                               in the format:
+                               `https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}`
+                               or
+                               `https://www.googleapis.com/compute/v1/projects/{project}/global/backendServices/{backendService}`.
+                            oneOf:
+                            - not:
+                                required:
+                                - external
+                              required:
+                              - name
+                            - not:
+                                anyOf:
+                                - required:
+                                  - name
+                                - required:
+                                  - namespace
+                              required:
+                              - external
+                            properties:
+                              external:
+                                description: The value of an externally managed ComputeBackendService
+                                  resource.
+                                type: string
+                              name:
+                                description: The name of a ComputeBackendService resource.
+                                type: string
+                              namespace:
+                                description: The namespace of a ComputeBackendService
+                                  resource.
+                                type: string
+                            type: object
                           failOpen:
                             description: |-
                               Optional. Determines how the proxy behaves if the call to the extension
@@ -156,42 +195,17 @@ spec:
                               length of 63 characters. Additionally, the first character
                               must be a letter and the last a letter or a number.
                             type: string
-                          service:
-                            description: |-
-                              Required. The reference to the service that runs the extension.
-
-                               To configure a callout extension, `service` must be a fully-qualified
-                               reference
-                               to a [backend
-                               service](https://cloud.google.com/compute/docs/reference/rest/v1/backendServices)
-                               in the format:
-                               `https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}`
-                               or
-                               `https://www.googleapis.com/compute/v1/projects/{project}/global/backendServices/{backendService}`.
-
-                               To configure a plugin extension, `service` must be a reference
-                               to a [`WasmPlugin`
-                               resource](https://cloud.google.com/service-extensions/docs/reference/rest/v1beta1/projects.locations.wasmPlugins)
-                               in the format:
-                               `projects/{project}/locations/{location}/wasmPlugins/{plugin}`
-                               or
-                               `//networkservices.googleapis.com/projects/{project}/locations/{location}/wasmPlugins/{wasmPlugin}`.
-
-                               Plugin extensions are currently supported for the
-                               `LbTrafficExtension`, the `LbRouteExtension`, and the `LbEdgeExtension`
-                               resources.
-                            type: string
                           supportedEvents:
                             description: |-
                               Optional. A set of events during request or response processing for which
                                this extension is called.
 
-                               For the `LbTrafficExtension` resource, this field is required.
+                               For the `LBTrafficExtension` resource, this field is required.
 
-                               For the `LbRouteExtension` resource, this field is optional. If
+                               For the `LBRouteExtension` resource, this field is optional. If
                                unspecified, `REQUEST_HEADERS` event is assumed as supported.
 
-                               For the `LbEdgeExtension` resource, this field is required and must only
+                               For the `LBEdgeExtension` resource, this field is required and must only
                                contain `REQUEST_HEADERS` event.
                             items:
                               type: string
@@ -205,7 +219,56 @@ spec:
                                This field is not supported for plugin extensions. Setting it results in
                                a validation error.
                             type: string
+                          wasmPluginRef:
+                            description: |-
+                              Optional. The reference to the WasmPlugin resource.
+
+                               To configure a plugin extension, `service` must be a reference
+                               to a [`WasmPlugin`
+                               resource](https://cloud.google.com/service-extensions/docs/reference/rest/v1beta1/projects.locations.wasmPlugins)
+                               in the format:
+                               `projects/{project}/locations/{location}/wasmPlugins/{plugin}`
+                               or
+                               `//networkservices.googleapis.com/projects/{project}/locations/{location}/wasmPlugins/{wasmPlugin}`.
+
+                               Plugin extensions are currently supported for the
+                               `LBTrafficExtension`, the `LBRouteExtension`, and the `LBEdgeExtension`
+                               resources.
+                            oneOf:
+                            - not:
+                                required:
+                                - external
+                              required:
+                              - name
+                            - not:
+                                anyOf:
+                                - required:
+                                  - name
+                                - required:
+                                  - namespace
+                              required:
+                              - external
+                            properties:
+                              external:
+                                description: 'The name of the wasmplugin. Allowed
+                                  value: The Google Cloud resource name of a `NetworkServicesWasmPlugin`
+                                  resource (format: `projects/{{project}}/locations/{{location}}/wasmPlugins/{{name}}`).'
+                                type: string
+                              name:
+                                description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
+                                type: string
+                              namespace:
+                                description: 'Namespace of the referent. More info:
+                                  https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
+                                type: string
+                            type: object
+                        required:
+                        - name
                         type: object
+                        x-kubernetes-validations:
+                        - message: either backendServiceRef or wasmPluginRef must
+                            be set
+                          rule: has(self.backendServiceRef) != has(self.wasmPluginRef)
                       type: array
                     matchCondition:
                       description: Required. Conditions under which this chain is
@@ -219,6 +282,8 @@ spec:
                              For more information, see [CEL matcher language
                              reference](https://cloud.google.com/service-extensions/docs/cel-matcher-language-reference).
                           type: string
+                      required:
+                      - celExpression
                       type: object
                     name:
                       description: Required. The name for this extension chain. The
@@ -228,12 +293,16 @@ spec:
                         Additionally, the first character must be a letter and the
                         last a letter or a number.
                       type: string
+                  required:
+                  - extensions
+                  - matchCondition
+                  - name
                   type: object
                 type: array
               forwardingRuleRefs:
                 description: Required. A list of references to the forwarding rules
                   to which this service extension is attached. At least one forwarding
-                  rule is required. Only one LbRouteExtension resource can be associated
+                  rule is required. Only one LBRouteExtension resource can be associated
                   with a forwarding rule.
                 items:
                   description: ForwardingRuleRef defines the resource reference to
@@ -315,16 +384,19 @@ spec:
                     type: string
                 type: object
               resourceID:
-                description: The NetworkServicesLbRouteExtension name. If not given,
+                description: The NetworkServicesLBRouteExtension name. If not given,
                   the metadata.name will be used.
                 type: string
             required:
+            - extensionChains
+            - forwardingRuleRefs
+            - loadBalancingScheme
             - location
             - projectRef
             type: object
           status:
-            description: NetworkServicesLbRouteExtensionStatus defines the config
-              connector machine state of NetworkServicesLbRouteExtension
+            description: NetworkServicesLBRouteExtensionStatus defines the config
+              connector machine state of NetworkServicesLBRouteExtension
             properties:
               conditions:
                 description: Conditions represent the latest available observations
@@ -353,7 +425,7 @@ spec:
                   type: object
                 type: array
               externalRef:
-                description: A unique specifier for the NetworkServicesLbRouteExtension
+                description: A unique specifier for the NetworkServicesLBRouteExtension
                   resource in GCP.
                 type: string
               observedGeneration:
