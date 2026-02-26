@@ -117,10 +117,6 @@ X-Xss-Protection: 0
   "kind": "compute#network",
   "name": "${networkID}",
   "networkFirewallPolicyEnforcementOrder": "AFTER_CLASSIC_FIREWALL",
-  "routingConfig": {
-    "bgpBestPathSelectionMode": "LEGACY",
-    "routingMode": "REGIONAL"
-  },
   "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
   "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}"
 }
@@ -249,17 +245,18 @@ X-Xss-Protection: 0
   "address": "8.8.8.8",
   "addressType": "INTERNAL",
   "creationTimestamp": "2024-04-01T12:34:56.123456Z",
-  "description": "",
   "id": "000000000000000000000",
   "kind": "compute#address",
   "labelFingerprint": "abcdef0123A=",
+  "labels": {
+    "cnrm-test": "true",
+    "managed-by-cnrm": "true"
+  },
   "name": "${addressID}",
-  "network": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
-  "networkTier": "PREMIUM",
+  "network": "projects/${projectId}/global/networks/${networkID}",
   "prefixLength": 16,
   "purpose": "VPC_PEERING",
-  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}",
-  "status": "RESERVED"
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}"
 }
 
 ---
@@ -287,19 +284,14 @@ X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 0
 
 {
-  "endTime": "2024-04-01T12:34:56.123456Z",
   "id": "000000000000000000000",
   "insertTime": "2024-04-01T12:34:56.123456Z",
   "kind": "compute#operation",
   "name": "${operationID}",
-  "operationType": "setLabels",
-  "progress": 100,
+  "progress": 0,
   "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/operations/${operationID}",
   "startTime": "2024-04-01T12:34:56.123456Z",
-  "status": "DONE",
-  "targetId": "${addressID}",
-  "targetLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}",
-  "user": "user@example.com"
+  "status": "DONE"
 }
 
 ---
@@ -322,7 +314,6 @@ X-Xss-Protection: 0
   "address": "8.8.8.8",
   "addressType": "INTERNAL",
   "creationTimestamp": "2024-04-01T12:34:56.123456Z",
-  "description": "",
   "id": "000000000000000000000",
   "kind": "compute#address",
   "labelFingerprint": "abcdef0123A=",
@@ -331,12 +322,10 @@ X-Xss-Protection: 0
     "managed-by-cnrm": "true"
   },
   "name": "${addressID}",
-  "network": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
-  "networkTier": "PREMIUM",
+  "network": "projects/${projectId}/global/networks/${networkID}",
   "prefixLength": 16,
   "purpose": "VPC_PEERING",
-  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}",
-  "status": "RESERVED"
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}"
 }
 
 ---
@@ -357,11 +346,6 @@ X-Xss-Protection: 0
 {
   "createTime": "2024-04-01T12:34:56.123456Z",
   "lifecycleState": "ACTIVE",
-  "name": "${projectId}",
-  "parent": {
-    "id": "${folderID}",
-    "type": "folder"
-  },
   "projectId": "${projectId}",
   "projectNumber": "${projectNumber}"
 }
@@ -401,11 +385,6 @@ X-Xss-Protection: 0
 {
   "createTime": "2024-04-01T12:34:56.123456Z",
   "lifecycleState": "ACTIVE",
-  "name": "${projectId}",
-  "parent": {
-    "id": "${folderID}",
-    "type": "folder"
-  },
   "projectId": "${projectId}",
   "projectNumber": "${projectNumber}"
 }
@@ -461,7 +440,8 @@ X-Xss-Protection: 0
     "peering": "servicenetworking-googleapis-com",
     "reservedPeeringRanges": [
       "${addressID}"
-    ]
+    ],
+    "service": "services/servicenetworking.googleapis.com"
   }
 }
 
@@ -483,11 +463,6 @@ X-Xss-Protection: 0
 {
   "createTime": "2024-04-01T12:34:56.123456Z",
   "lifecycleState": "ACTIVE",
-  "name": "${projectId}",
-  "parent": {
-    "id": "${folderID}",
-    "type": "folder"
-  },
   "projectId": "${projectId}",
   "projectNumber": "${projectNumber}"
 }
@@ -600,6 +575,7 @@ User-Agent: kcc/${kccVersion} (+https://github.com/GoogleCloudPlatform/k8s-confi
     "edition": "ENTERPRISE",
     "insightsConfig": {
       "queryInsightsEnabled": true,
+      "queryPlansPerMinute": 5,
       "queryStringLength": 2048
     },
     "ipConfiguration": {
@@ -705,21 +681,17 @@ X-Xss-Protection: 0
   "backendType": "SECOND_GEN",
   "connectionName": "${projectId}:europe-west1:postgres-replication-${uniqueId}",
   "createTime": "2024-04-01T12:34:56.123456Z",
-  "databaseInstalledVersion": "POSTGRES_16_11",
+  "databaseInstalledVersion": "POSTGRES_16_3",
   "databaseVersion": "POSTGRES_16",
   "etag": "abcdef0123A=",
-  "failoverReplica": {
-    "available": true
-  },
   "gceZone": "us-central1-a",
   "geminiConfig": {
     "activeQueryEnabled": false,
     "entitled": false,
     "googleVacuumMgmtEnabled": false,
     "indexAdvisorEnabled": false,
-    "oomSessionCancelEnabled": true
+    "oomSessionCancelEnabled": false
   },
-  "includeReplicasForMajorVersionUpgrade": false,
   "instanceType": "CLOUD_SQL_INSTANCE",
   "ipAddresses": [
     {
@@ -728,12 +700,11 @@ X-Xss-Protection: 0
     }
   ],
   "kind": "sql#instance",
-  "maintenanceVersion": "POSTGRES_16_11.R20251004.01_26",
+  "maintenanceVersion": "POSTGRES_16_3.R20240527.01_10",
   "name": "postgres-replication-${uniqueId}",
   "project": "${projectId}",
   "region": "europe-west1",
   "satisfiesPzi": true,
-  "secondaryGceZone": "europe-west1-b",
   "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/${projectId}/instances/postgres-replication-${uniqueId}",
   "serverCaCert": {
     "cert": "-----BEGIN CERTIFICATE-----\n-----END CERTIFICATE-----\n",
@@ -755,14 +726,13 @@ X-Xss-Protection: 0
         "retainedBackups": 7,
         "retentionUnit": "COUNT"
       },
-      "backupTier": "STANDARD",
       "enabled": true,
       "kind": "sql#backupConfiguration",
       "pointInTimeRecoveryEnabled": true,
-      "replicationLogArchivingEnabled": true,
+      "replicationLogArchivingEnabled": false,
       "startTime": "12:00",
       "transactionLogRetentionDays": 7,
-      "transactionalLogStorageState": "CLOUD_STORAGE"
+      "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
     },
     "connectorEnforcement": "NOT_REQUIRED",
     "dataDiskSizeGb": "180",
@@ -789,6 +759,7 @@ X-Xss-Protection: 0
     "edition": "ENTERPRISE",
     "insightsConfig": {
       "queryInsightsEnabled": true,
+      "queryPlansPerMinute": 5,
       "queryStringLength": 2048
     },
     "ipConfiguration": {
@@ -797,7 +768,6 @@ X-Xss-Protection: 0
       "ipv4Enabled": false,
       "privateNetwork": "projects/${projectId}/global/networks/${networkID}",
       "requireSsl": true,
-      "serverCertificateRotationMode": "SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED",
       "sslMode": "TRUSTED_CLIENT_CERTIFICATE_REQUIRED"
     },
     "kind": "sql#settings",
@@ -813,7 +783,6 @@ X-Xss-Protection: 0
       "updateTrack": "stable"
     },
     "pricingPlan": "PER_USE",
-    "replicationLagMaxSeconds": 31536000,
     "replicationType": "SYNCHRONOUS",
     "settingsVersion": "123",
     "storageAutoResize": true,
@@ -825,19 +794,7 @@ X-Xss-Protection: 0
     }
   },
   "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
-  "state": "RUNNABLE",
-  "upgradableDatabaseVersions": [
-    {
-      "displayName": "PostgreSQL 17",
-      "majorVersion": "POSTGRES_17",
-      "name": "POSTGRES_17"
-    },
-    {
-      "displayName": "PostgreSQL 18",
-      "majorVersion": "POSTGRES_18",
-      "name": "POSTGRES_18"
-    }
-  ]
+  "state": "RUNNABLE"
 }
 
 ---
@@ -864,6 +821,9 @@ X-Xss-Protection: 0
       "instance": "postgres-replication-${uniqueId}",
       "kind": "sql#user",
       "name": "postgres",
+      "passwordPolicy": {
+        "status": {}
+      },
       "project": "${projectId}"
     }
   ],
@@ -889,21 +849,17 @@ X-Xss-Protection: 0
   "backendType": "SECOND_GEN",
   "connectionName": "${projectId}:europe-west1:postgres-replication-${uniqueId}",
   "createTime": "2024-04-01T12:34:56.123456Z",
-  "databaseInstalledVersion": "POSTGRES_16_11",
+  "databaseInstalledVersion": "POSTGRES_16_3",
   "databaseVersion": "POSTGRES_16",
   "etag": "abcdef0123A=",
-  "failoverReplica": {
-    "available": true
-  },
   "gceZone": "us-central1-a",
   "geminiConfig": {
     "activeQueryEnabled": false,
     "entitled": false,
     "googleVacuumMgmtEnabled": false,
     "indexAdvisorEnabled": false,
-    "oomSessionCancelEnabled": true
+    "oomSessionCancelEnabled": false
   },
-  "includeReplicasForMajorVersionUpgrade": false,
   "instanceType": "CLOUD_SQL_INSTANCE",
   "ipAddresses": [
     {
@@ -912,12 +868,11 @@ X-Xss-Protection: 0
     }
   ],
   "kind": "sql#instance",
-  "maintenanceVersion": "POSTGRES_16_11.R20251004.01_26",
+  "maintenanceVersion": "POSTGRES_16_3.R20240527.01_10",
   "name": "postgres-replication-${uniqueId}",
   "project": "${projectId}",
   "region": "europe-west1",
   "satisfiesPzi": true,
-  "secondaryGceZone": "europe-west1-b",
   "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/${projectId}/instances/postgres-replication-${uniqueId}",
   "serverCaCert": {
     "cert": "-----BEGIN CERTIFICATE-----\n-----END CERTIFICATE-----\n",
@@ -939,14 +894,13 @@ X-Xss-Protection: 0
         "retainedBackups": 7,
         "retentionUnit": "COUNT"
       },
-      "backupTier": "STANDARD",
       "enabled": true,
       "kind": "sql#backupConfiguration",
       "pointInTimeRecoveryEnabled": true,
-      "replicationLogArchivingEnabled": true,
+      "replicationLogArchivingEnabled": false,
       "startTime": "12:00",
       "transactionLogRetentionDays": 7,
-      "transactionalLogStorageState": "CLOUD_STORAGE"
+      "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
     },
     "connectorEnforcement": "NOT_REQUIRED",
     "dataDiskSizeGb": "180",
@@ -973,6 +927,7 @@ X-Xss-Protection: 0
     "edition": "ENTERPRISE",
     "insightsConfig": {
       "queryInsightsEnabled": true,
+      "queryPlansPerMinute": 5,
       "queryStringLength": 2048
     },
     "ipConfiguration": {
@@ -981,7 +936,6 @@ X-Xss-Protection: 0
       "ipv4Enabled": false,
       "privateNetwork": "projects/${projectId}/global/networks/${networkID}",
       "requireSsl": true,
-      "serverCertificateRotationMode": "SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED",
       "sslMode": "TRUSTED_CLIENT_CERTIFICATE_REQUIRED"
     },
     "kind": "sql#settings",
@@ -997,7 +951,6 @@ X-Xss-Protection: 0
       "updateTrack": "stable"
     },
     "pricingPlan": "PER_USE",
-    "replicationLagMaxSeconds": 31536000,
     "replicationType": "SYNCHRONOUS",
     "settingsVersion": "123",
     "storageAutoResize": true,
@@ -1009,19 +962,7 @@ X-Xss-Protection: 0
     }
   },
   "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
-  "state": "RUNNABLE",
-  "upgradableDatabaseVersions": [
-    {
-      "displayName": "PostgreSQL 17",
-      "majorVersion": "POSTGRES_17",
-      "name": "POSTGRES_17"
-    },
-    {
-      "displayName": "PostgreSQL 18",
-      "majorVersion": "POSTGRES_18",
-      "name": "POSTGRES_18"
-    }
-  ]
+  "state": "RUNNABLE"
 }
 
 ---
@@ -1034,7 +975,7 @@ User-Agent: kcc/${kccVersion} (+https://github.com/GoogleCloudPlatform/k8s-confi
   "databaseVersion": "POSTGRES_16",
   "instanceType": "CLOUD_SQL_INSTANCE",
   "kind": "sql#instance",
-  "maintenanceVersion": "POSTGRES_16_11.R20251004.01_26",
+  "maintenanceVersion": "POSTGRES_16_3.R20240527.01_10",
   "name": "postgres-replication-${uniqueId}",
   "region": "europe-west1",
   "settings": {
@@ -1076,6 +1017,7 @@ User-Agent: kcc/${kccVersion} (+https://github.com/GoogleCloudPlatform/k8s-confi
     "edition": "ENTERPRISE",
     "insightsConfig": {
       "queryInsightsEnabled": true,
+      "queryPlansPerMinute": 5,
       "queryStringLength": 2048
     },
     "ipConfiguration": {
@@ -1182,21 +1124,17 @@ X-Xss-Protection: 0
   "backendType": "SECOND_GEN",
   "connectionName": "${projectId}:europe-west1:postgres-replication-${uniqueId}",
   "createTime": "2024-04-01T12:34:56.123456Z",
-  "databaseInstalledVersion": "POSTGRES_16_11",
+  "databaseInstalledVersion": "POSTGRES_16_3",
   "databaseVersion": "POSTGRES_16",
   "etag": "abcdef0123A=",
-  "failoverReplica": {
-    "available": true
-  },
   "gceZone": "us-central1-a",
   "geminiConfig": {
     "activeQueryEnabled": false,
     "entitled": false,
     "googleVacuumMgmtEnabled": false,
     "indexAdvisorEnabled": false,
-    "oomSessionCancelEnabled": true
+    "oomSessionCancelEnabled": false
   },
-  "includeReplicasForMajorVersionUpgrade": false,
   "instanceType": "CLOUD_SQL_INSTANCE",
   "ipAddresses": [
     {
@@ -1205,12 +1143,11 @@ X-Xss-Protection: 0
     }
   ],
   "kind": "sql#instance",
-  "maintenanceVersion": "POSTGRES_16_11.R20251004.01_26",
+  "maintenanceVersion": "POSTGRES_16_3.R20240527.01_10",
   "name": "postgres-replication-${uniqueId}",
   "project": "${projectId}",
   "region": "europe-west1",
   "satisfiesPzi": true,
-  "secondaryGceZone": "europe-west1-b",
   "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/${projectId}/instances/postgres-replication-${uniqueId}",
   "serverCaCert": {
     "cert": "-----BEGIN CERTIFICATE-----\n-----END CERTIFICATE-----\n",
@@ -1232,14 +1169,13 @@ X-Xss-Protection: 0
         "retainedBackups": 7,
         "retentionUnit": "COUNT"
       },
-      "backupTier": "STANDARD",
       "enabled": true,
       "kind": "sql#backupConfiguration",
       "pointInTimeRecoveryEnabled": true,
-      "replicationLogArchivingEnabled": true,
+      "replicationLogArchivingEnabled": false,
       "startTime": "12:00",
       "transactionLogRetentionDays": 7,
-      "transactionalLogStorageState": "CLOUD_STORAGE"
+      "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
     },
     "connectorEnforcement": "NOT_REQUIRED",
     "dataDiskSizeGb": "180",
@@ -1266,6 +1202,7 @@ X-Xss-Protection: 0
     "edition": "ENTERPRISE",
     "insightsConfig": {
       "queryInsightsEnabled": true,
+      "queryPlansPerMinute": 5,
       "queryStringLength": 2048
     },
     "ipConfiguration": {
@@ -1274,7 +1211,6 @@ X-Xss-Protection: 0
       "ipv4Enabled": false,
       "privateNetwork": "projects/${projectId}/global/networks/${networkID}",
       "requireSsl": true,
-      "serverCertificateRotationMode": "SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED",
       "sslMode": "TRUSTED_CLIENT_CERTIFICATE_REQUIRED"
     },
     "kind": "sql#settings",
@@ -1290,7 +1226,6 @@ X-Xss-Protection: 0
       "updateTrack": "stable"
     },
     "pricingPlan": "PER_USE",
-    "replicationLagMaxSeconds": 31536000,
     "replicationType": "SYNCHRONOUS",
     "settingsVersion": "123",
     "storageAutoResize": true,
@@ -1302,19 +1237,7 @@ X-Xss-Protection: 0
     }
   },
   "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
-  "state": "RUNNABLE",
-  "upgradableDatabaseVersions": [
-    {
-      "displayName": "PostgreSQL 17",
-      "majorVersion": "POSTGRES_17",
-      "name": "POSTGRES_17"
-    },
-    {
-      "displayName": "PostgreSQL 18",
-      "majorVersion": "POSTGRES_18",
-      "name": "POSTGRES_18"
-    }
-  ]
+  "state": "RUNNABLE"
 }
 
 ---
@@ -1335,11 +1258,6 @@ X-Xss-Protection: 0
 {
   "createTime": "2024-04-01T12:34:56.123456Z",
   "lifecycleState": "ACTIVE",
-  "name": "${projectId}",
-  "parent": {
-    "id": "${folderID}",
-    "type": "folder"
-  },
   "projectId": "${projectId}",
   "projectNumber": "${projectNumber}"
 }
@@ -1390,11 +1308,6 @@ X-Xss-Protection: 0
 {
   "createTime": "2024-04-01T12:34:56.123456Z",
   "lifecycleState": "ACTIVE",
-  "name": "${projectId}",
-  "parent": {
-    "id": "${folderID}",
-    "type": "folder"
-  },
   "projectId": "${projectId}",
   "projectNumber": "${projectNumber}"
 }
@@ -1424,14 +1337,10 @@ X-Xss-Protection: 0
   "insertTime": "2024-04-01T12:34:56.123456Z",
   "kind": "compute#operation",
   "name": "${operationID}",
-  "operationType": "removePeering",
   "progress": 0,
   "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/operations/${operationID}",
   "startTime": "2024-04-01T12:34:56.123456Z",
-  "status": "RUNNING",
-  "targetId": "${networkID}",
-  "targetLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
-  "user": "user@example.com"
+  "status": "RUNNING"
 }
 
 ---
@@ -1455,14 +1364,10 @@ X-Xss-Protection: 0
   "insertTime": "2024-04-01T12:34:56.123456Z",
   "kind": "compute#operation",
   "name": "${operationID}",
-  "operationType": "removePeering",
   "progress": 100,
   "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/operations/${operationID}",
   "startTime": "2024-04-01T12:34:56.123456Z",
-  "status": "DONE",
-  "targetId": "${networkID}",
-  "targetLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
-  "user": "user@example.com"
+  "status": "DONE"
 }
 
 ---
@@ -1485,7 +1390,6 @@ X-Xss-Protection: 0
   "address": "8.8.8.8",
   "addressType": "INTERNAL",
   "creationTimestamp": "2024-04-01T12:34:56.123456Z",
-  "description": "",
   "id": "000000000000000000000",
   "kind": "compute#address",
   "labelFingerprint": "abcdef0123A=",
@@ -1494,12 +1398,10 @@ X-Xss-Protection: 0
     "managed-by-cnrm": "true"
   },
   "name": "${addressID}",
-  "network": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
-  "networkTier": "PREMIUM",
+  "network": "projects/${projectId}/global/networks/${networkID}",
   "prefixLength": 16,
   "purpose": "VPC_PEERING",
-  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}",
-  "status": "RESERVED"
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/addresses/${addressID}"
 }
 
 ---
@@ -1587,10 +1489,6 @@ X-Xss-Protection: 0
   "kind": "compute#network",
   "name": "${networkID}",
   "networkFirewallPolicyEnforcementOrder": "AFTER_CLASSIC_FIREWALL",
-  "routingConfig": {
-    "bgpBestPathSelectionMode": "LEGACY",
-    "routingMode": "REGIONAL"
-  },
   "selfLink": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}",
   "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/${projectId}/global/networks/${networkID}"
 }
