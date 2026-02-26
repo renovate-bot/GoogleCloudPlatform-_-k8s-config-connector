@@ -17,9 +17,12 @@ package mockcertificatemanager
 import (
 	"context"
 	"fmt"
+	"strconv"
 	"strings"
 
 	"google.golang.org/genproto/googleapis/longrunning"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/emptypb"
 	"google.golang.org/protobuf/types/known/timestamppb"
@@ -73,7 +76,6 @@ func (s *CertificateManagerV1) CreateCertificateIssuanceConfig(ctx context.Conte
 
 	return s.operations.StartLRO(ctx, req.Parent, lroMetadata, func() (proto.Message, error) {
 		result := proto.Clone(obj).(*pb.CertificateIssuanceConfig)
-		result.Labels = nil
 		return result, nil
 	})
 }
@@ -100,10 +102,45 @@ func (s *CertificateManagerV1) ListCertificateIssuanceConfigs(ctx context.Contex
 			}
 		}
 		objs = filtered
+	} else {
+		return nil, status.Errorf(codes.InvalidArgument, "parent %q is not valid", req.Parent)
+	}
+
+	// Simple pagination implementation
+	pageSize := int(req.GetPageSize())
+	if pageSize == 0 {
+		pageSize = 100 // Default page size
+	}
+	if pageSize > 1000 {
+		pageSize = 1000 // Max page size
+	}
+
+	startIndex := 0
+	if req.GetPageToken() != "" {
+		var err error
+		startIndex, err = strconv.Atoi(req.GetPageToken())
+		if err != nil {
+			return nil, status.Errorf(codes.InvalidArgument, "page_token %q is not valid", req.GetPageToken())
+		}
+	}
+
+	if startIndex < 0 || startIndex > len(objs) {
+		startIndex = len(objs)
+	}
+
+	endIndex := startIndex + pageSize
+	if endIndex > len(objs) {
+		endIndex = len(objs)
+	}
+
+	nextPageToken := ""
+	if endIndex < len(objs) {
+		nextPageToken = strconv.Itoa(endIndex)
 	}
 
 	return &pb.ListCertificateIssuanceConfigsResponse{
-		CertificateIssuanceConfigs: objs,
+		CertificateIssuanceConfigs: objs[startIndex:endIndex],
+		NextPageToken:              nextPageToken,
 	}, nil
 }
 
