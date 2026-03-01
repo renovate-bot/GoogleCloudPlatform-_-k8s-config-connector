@@ -16,10 +16,12 @@ module github.com/GoogleCloudPlatform/k8s-config-connector/dev/tools/crd-mcp-ser
 
 go 1.24.0
 
-toolchain go1.24.6
+toolchain go1.26.0
 
 require (
 	github.com/mark3labs/mcp-go v0.44.0
+	github.com/metoro-io/mcp-golang v0.16.0
+	github.com/spf13/cobra v1.10.2
 	k8s.io/apiextensions-apiserver v0.33.0
 	sigs.k8s.io/yaml v1.4.0
 )
@@ -35,12 +37,10 @@ require (
 	github.com/invopop/jsonschema v0.13.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/metoro-io/mcp-golang v0.16.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/spf13/cast v1.7.1 // indirect
-	github.com/spf13/cobra v1.10.2 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
