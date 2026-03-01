@@ -23,7 +23,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/hashstructure v1.1.0
 	github.com/sirupsen/logrus v1.8.1
-	golang.org/x/net v0.14.0
+	golang.org/x/net v0.51.0
 	golang.org/x/oauth2 v0.11.0
 	google.golang.org/api v0.139.0
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d
