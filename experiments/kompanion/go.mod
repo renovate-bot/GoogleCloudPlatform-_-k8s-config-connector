@@ -7,7 +7,7 @@ toolchain go1.26.1
 require (
 	github.com/mark3labs/mcp-go v0.45.0
 	github.com/spf13/cobra v1.8.1
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/pflag v1.0.10
 	golang.org/x/sync v0.13.0
 	k8s.io/apimachinery v0.33.10
 	k8s.io/client-go v0.32.1
