@@ -16,7 +16,7 @@ module github.com/GoogleCloudPlatform/k8s-config-connector/dev/tools/crd-mcp-ser
 
 go 1.26
 
-toolchain go1.26.1
+toolchain go1.26.2
 
 require (
 	github.com/metoro-io/mcp-golang v0.16.0
