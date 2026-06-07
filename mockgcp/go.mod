@@ -67,7 +67,7 @@ require (
 	cloud.google.com/go/vpcaccess v1.8.7
 	cloud.google.com/go/workflows v1.14.3
 	cloud.google.com/go/workstations v1.1.6
-	github.com/GoogleCloudPlatform/k8s-config-connector v1.129.2
+	github.com/GoogleCloudPlatform/k8s-config-connector v1.152.0
 	github.com/golang/protobuf v1.5.4
 	github.com/google/uuid v1.6.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1
