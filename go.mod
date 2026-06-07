@@ -54,7 +54,7 @@ require (
 	cloud.google.com/go/managedkafka v0.8.1
 	cloud.google.com/go/memorystore v0.9.0
 	cloud.google.com/go/metastore v1.14.8
-	cloud.google.com/go/monitoring v1.24.3
+	cloud.google.com/go/monitoring v1.29.0
 	cloud.google.com/go/netapp v1.12.0
 	cloud.google.com/go/networkmanagement v1.23.0
 	cloud.google.com/go/networksecurity v0.17.0
@@ -155,8 +155,8 @@ require (
 	cloud.google.com/go/pubsublite v1.8.2 // indirect
 	cloud.google.com/go/vpcaccess v1.8.7 // indirect
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.31.0 // indirect
-	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.54.0 // indirect
-	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.54.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.56.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.56.0 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/envoyproxy/go-control-plane/envoy v1.37.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
@@ -188,7 +188,7 @@ require (
 	cloud.google.com/go v0.123.0 // indirect
 	cloud.google.com/go/auth v0.20.0 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
-	cloud.google.com/go/bigtable v1.42.0
+	cloud.google.com/go/bigtable v1.48.0
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/longrunning v1.0.0
 	dario.cat/mergo v1.0.0 // indirect

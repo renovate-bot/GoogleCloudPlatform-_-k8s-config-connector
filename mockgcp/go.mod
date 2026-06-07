@@ -21,7 +21,7 @@ require (
 	cloud.google.com/go/backupdr v1.6.0
 	cloud.google.com/go/batch v1.14.0
 	cloud.google.com/go/bigquery v1.74.0
-	cloud.google.com/go/bigtable v1.42.0
+	cloud.google.com/go/bigtable v1.48.0
 	cloud.google.com/go/billing v1.21.0
 	cloud.google.com/go/certificatemanager v1.9.6
 	cloud.google.com/go/clouddms v1.8.8
@@ -47,7 +47,7 @@ require (
 	cloud.google.com/go/memcache v1.11.7
 	cloud.google.com/go/memorystore v0.9.0
 	cloud.google.com/go/modelarmor v1.0.0
-	cloud.google.com/go/monitoring v1.24.3
+	cloud.google.com/go/monitoring v1.29.0
 	cloud.google.com/go/netapp v1.12.0
 	cloud.google.com/go/networkmanagement v1.23.0
 	cloud.google.com/go/networksecurity v0.17.0
@@ -98,8 +98,8 @@ require (
 	contrib.go.opencensus.io/exporter/prometheus v0.1.0 // indirect
 	github.com/GoogleCloudPlatform/declarative-resource-client-library v1.62.0 // indirect
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.31.0 // indirect
-	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.54.0 // indirect
-	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.54.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.56.0 // indirect
+	github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.56.0 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-cidr v1.1.0 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
